@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunkan Maki Sushi - Recetas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="../styles/recipe.css">
+</head>
+<body>
+    <div class="recipe-container">
+        <a href="sushi.html" class="back-button">← Volver a Sushi</a>
+        <div class="recipe-header">
+            <h1>Gunkan Maki</h1>
+            <div class="scaling-controls">
+                <label for="servingScale">Ajustar cantidades:</label>
+                <select id="servingScale">
+                    <option value="0.5">½×</option>
+                    <option value="1" selected>1×</option>
+                    <option value="2">2×</option>
+                    <option value="3">3×</option>
+                </select>
+            </div>
+            <div class="recipe-meta">
+                <span>⏱️ Tiempo: 40min</span>
+                <span>👥 Porciones: <span id="servings">4</span></span>
+            </div>
+        </div>
+
+        <div class="recipe-content">
+            <div class="ingredients-section">
+                <h2>Ingredientes</h2>
+                <ul class="ingredients-list">
+                    <li><a href="shari.html">Shari</a> <span class="amount">500grs</span></li>
+                    <li>Salmón fresco <span class="amount">350grs</span></li>
+                    <li>Algas Nori <span class="amount">6un</span></li>
+                    <li>Ikura (Caviar de salmón rosado) <span class="amount">10grs</span></li>
+                    <li>Sake <span class="amount">10cm3</span></li>
+                    <li>Bastoncitos de Kanikama <span class="amount">2un</span></li>
+                    <li>Palta <span class="amount">1/2un</span></li>
+                    <li>Planta pequeña de cebolla de verdeo <span class="amount">1un</span></li>
+                    <li>Pepino Japonés <span class="amount">3un</span></li>
+                    <li>Wasabi <span class="amount">10grs</span></li>
+                    <li>Mayonesa <span class="amount">10grs</span></li>
+                    <li>Huevos de codorniz <span class="amount">6un</span></li>
+                    <li>Salsa de soja <span class="amount">30cm3</span></li>
+                    <li>Tabasco a gusto</li>
+                </ul>
+            </div>
+
+            <div class="instructions-section">
+                <h2>Instrucciones</h2>
+                <ol class="instructions-list">
+                   <li>Picamos en brunoise el kanikama, el pepino, y la palta, mezclar todo con un poco de mayonesa y reservar en la heladera.</li>
+                   <li>Tartare de salmón, cortar en brunoise el salmón, y picar bien fino la cebolla de verdeo, mezclar todo junto con queso crema, mayonesa, o una hueva de codorniz, y reservar en la heladera.</li>
+                   <li>En un pequeño bowl colocar las huevas de salmón, y macerar durante 15 minutos con sake, luego retirar el sake.</li>
+                   <li>Tomar el pepino japonés, primero cortar a la mitad a lo largo, y luego cortar pequeños abanicos para decorar.</li>
+                   <li>Preparar bollitos con el shari de 3 a 3.5 cm de largo por 1,5 de alto aproximadamente, en forma de pequeño corcho.</li>
+                   <li>Para el armado, envolver el bollito de shari en la tira de alga, colocar en un extremo el abanico de pepino, luego rellenar con alguno de los rellenos, ikura, kanikama, o salmón.</li>
+                   <li>Una vez rellenos, colocar el wasabi a gusto, y degustar en menos de 30 segundos.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-tips">
+            <h3>💡 Observación</h3>
+            <p>El Gunkan Maki significa "barco de guerra" en japonés, debido a su forma característica que se asemeja a un pequeño bote. Es importante que el nori esté bien ajustado al arroz para mantener el relleno en su lugar.</p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../scripts/recipe.js"></script>

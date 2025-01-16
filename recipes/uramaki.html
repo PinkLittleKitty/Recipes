@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uramaki Sushi - Recetas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="../styles/recipe.css">
+</head>
+<body>
+    <div class="recipe-container">
+        <a href="sushi.html" class="back-button">← Volver a Sushi</a>
+        <div class="recipe-header">
+            <h1>Uramaki</h1>
+            <div class="scaling-controls">
+                <label for="servingScale">Ajustar cantidades:</label>
+                <select id="servingScale">
+                    <option value="0.5">½×</option>
+                    <option value="1" selected>1×</option>
+                    <option value="2">2×</option>
+                    <option value="3">3×</option>
+                </select>
+            </div>
+            <div class="recipe-meta">
+                <span>⏱️ Tiempo: 45min</span>
+                <span>👥 Porciones: <span id="servings">4</span></span>
+            </div>
+        </div>
+
+        <div class="recipe-content">
+            <div class="ingredients-section">
+                <h2>Ingredientes</h2>
+                <ul class="ingredients-list">
+                    <li><a href="shari.html">Shari</a> <span class="amount">2kg</span></li>
+                    <li>Semillas de sésamo tostadas <span class="amount">40grs</span></li>
+                    <li>Hojas de algas nori <span class="amount">5un</span></li>
+                    <li>Salmón fresco <span class="amount">400grs</span></li>
+                    <li>Atún entero, en lata <span class="amount">350grs</span></li>
+                    <li>Lechuga mantecosa fresca <span class="amount">150grs</span></li>
+                    <li>Palta Hass <span class="amount">1 un</span></li>
+                    <li>Pepino Japonés <span class="amount">2 un</span></li>
+                    <li>Planta de cebolla de verdeo <span class="amount">2 un</span></li>
+                    <li>Salsa de soja estilo japonés <span class="amount">30 cm3</span></li>
+                    <li>Wasabi <span class="amount">20 grs</span></li>
+                    <li>Perejil Crespo</li>
+                    <li>Salsa tabasco a gusto</li>
+                    <li>Sal y pimienta negra a gusto</li>
+                </ul>
+            </div>
+
+            <div class="instructions-section">
+                <h2>Instrucciones</h2>
+                <ol class="instructions-list">
+                    <li>Forrar la esterilla con papel film</li>
+                    <details closed>
+                        <summary><h3>Tuna Roll</h3></summary>
+                        <ol class="instructions-list">
+                            <li>Colocar en un bowl, el atún desmenuzado sin agua ni aceite, un poco de mayonesa, sal, pimienta a gusto, cebolla de verdeo picado bien fino, mezclar, y reservar.</li>
+                            <li>Colocar un alga nori sobre la esterilla y cubrir todo el alga con 6mm de shari.</li>
+                            <li>Espolvorear a gusto con el sésamo y dar vuelta el nori.</li>
+                            <li>Colocar en el centro del nori, primero la lechuga mantecosa, luego el atún en forma cilíndrica de 2cm de diámetro, cerrar, y cortar en 8 piezas.</li>
+                        </ol>
+                    </details>
+                    <details closed>
+                        <summary><h3>New York Roll</h3></summary>
+                        <ol class="instructions-list">
+                            <li>Colocar un alga nori sobre la esterilla y cubrir toda el alga con 6mm de shari.</li>
+                            <li>Espolvorear a gusto con el sésamo y dar vuelta el nori.</li>
+                            <li>Colocar en el centro del nori, primero la palta en gajos, una cinta de pepino de 1cm x 5 mm, un bastón de salmón fresco de 1,5 x 1,5, cerrar, y cortar en 8 piezas.</li>
+                            <li>Acompañar con salsa de soja, perejil crespo, wasabi, y servir.</li>
+                        </ol>
+                    </details>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-tips">
+            <h3>💡 Observación</h3>
+            <p>El uramaki es un roll invertido donde el arroz queda por fuera y el alga nori por dentro.</p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../scripts/recipe.js"></script>
