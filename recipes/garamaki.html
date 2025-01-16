@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garamaki Sushi - Recetas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="../styles/recipe.css">
+</head>
+<body>
+    <div class="recipe-container">
+        <a href="sushi.html" class="back-button">← Volver a Sushi</a>
+        <div class="recipe-header">
+            <h1>Garamaki</h1>
+            <div class="scaling-controls">
+                <label for="servingScale">Ajustar cantidades:</label>
+                <select id="servingScale">
+                    <option value="0.5">½×</option>
+                    <option value="1" selected>1×</option>
+                    <option value="2">2×</option>
+                    <option value="3">3×</option>
+                </select>
+            </div>
+            <div class="recipe-meta">
+                <span>⏱️ Tiempo: 45min</span>
+                <span>👥 Porciones: <span id="servings">4</span></span>
+            </div>
+        </div>
+
+
+        <div class="recipe-content">
+            <div class="ingredients-section">
+                <h2>Ingredientes</h2>
+                <ul class="ingredients-list">
+                    <li>Shari (arroz para sushi) <span class="amount">1kg</span></li>
+                    <li>Espárragos frescos <span class="amount">4un</span></li>
+                    <li>Queso Philadelphia <span class="amount">80grs</span></li>
+                    <li>Hojas de algas nori <span class="amount">5un</span></li>
+                    <li>Filete de lenguado <span class="amount">200grs</span></li>
+                    <li>Panko <span class="amount">100grs</span></li>
+                    <li>Harina 000 <span class="amount">50grs</span></li>
+                    <li>Huevos <span class="amount">2un</span></li>
+                    <li>Sal y pimienta verde al gusto</li>
+                    <li>Aceite para freír</li>
+                    <li>Salmón fresco (pieza de 9cm) <span class="amount">400grs</span></li>
+                    <li>Planta de cebolla de verdeo <span class="amount">1un</span</li>
+                    <li>Salsa tabasco a gusto</li>
+                </ul>
+                <details closed>
+                    <summary><h3>Tamagoyaki</h3></summary>
+                    <ol class="instructions-list">
+                        <li>Batir 3 huevos con 1 cda. de azúcar, 3 cdas de sake, y una pizca de sal.</li>
+                        <li>Verter sobre la sartén caliente previamente aceitada.</li>
+                        <li>Cocinar a fuego mínimo hasta que cuaje..</li>
+                        <li>Dar vuelta el omellete y cocinar 1 minuto.</li>
+                        <li>Emplatar y dejar enfriar.</li>
+                    </ol>
+                </details>
+                <details closed>
+                    <summary><h3>Salsa</h3></summary>
+                    <ol class="ingredients-list">
+                        <li>Salsa de soja <span class="amount">50 cm3</span></li>
+                        <li>Azúcar blanca <span class="amount">50 grs</span></li>
+                        <li>Semilla de sésamo tostada<span class="amount">30 grs</span></li>
+                        <li>Wasabi <span class="amount">3 grs</span></li>
+                        <li>Perejil Crespo</li>
+                        <li>Gari o Benishoga<span class="amount">30 grs</span></li>
+                    </ol>
+                </details>
+            </div>
+
+            <div class="instructions-section">
+                <h2>Instrucciones</h2>
+                <ul class="instructions-list">
+                    <details closed>
+                        <summary><h3>Roll de lenguado panko</h3></summary>
+                        <ol class="instructions-list">
+                            <li>En un bowl colocamos los ingredientes del tamagoyaki, batimos todo, pasamos por un colador, y en una sartén de teflón con un poco de aceite, colocamos la mezcla, y cocinamos en forma de omelette, luego reservar sobre una tabla.</li>
+                            <li>Tomamoes el filete de lenguado, lo limpiamos, cortamos en bastones de 1x1 cm de ancho, por 9 cm de largo, condimentamos con sal y pimienta, pasamos por harina de trigo, luego por huevos batidos, y después por panko. Freimos en aceite por 2-3 minutos, retiramos y reservamos.</li>
+                        </ol>
+                    </details>
+                    <details closed>
+                        <summary><h3>Salsa de sésamo</h3></summary>
+                        <ol class="instructions-list">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                    </details>
+                    <details closed>
+                        <summary><h3>Roll Philadelphia</h3></summary>
+                        <ol class="instructions-list">
+                            <li>Colocar el alga nori sobre la esterilla y cubrir toda el alga con shari.</li>
+                            <li>Espolvorear a gusto con el sésamo y dar vuelta el nori. (Queda el arroz sobre la esterilla)</li>
+                            <li>Colocar en el centro del nori, primero el queso philadelphia, la cebolla de verdeo picado fino, un bastón de salmón fresco de 1,5x1,5cm, cerrar, y cortar en 8 piezas.</li>
+                        </ol>
+                    </details>
+                </ul>
+            </div>
+        </div>
+        <div class="recipe-tips">
+            <h3>💡 Observación</h3>
+            <p>Los Maki sushi o Roll, son cuadrados, o en forma de arco, nunca redondo.</p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../scripts/recipe.js"></script>
