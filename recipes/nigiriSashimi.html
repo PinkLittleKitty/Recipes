@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niguiri y Sashimi - Recetas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="../styles/recipe.css">
+</head>
+<body>
+    <div class="recipe-container">
+        <a href="sushi.html" class="back-button">← Volver a Sushi</a>
+        <div class="recipe-header">
+            <h1>Niguiri de Salmón</h1>
+            <div class="scaling-controls">
+                <label for="servingScale">Ajustar cantidades:</label>
+                <select id="servingScale">
+                    <option value="0.5">½×</option>
+                    <option value="1" selected>1×</option>
+                    <option value="2">2×</option>
+                    <option value="3">3×</option>
+                </select>
+            </div>
+            <div class="recipe-meta">
+                <span>⏱️ Tiempo: 40min</span>
+                <span>👥 Porciones: <span id="servings">4</span></span>
+            </div>
+        </div>
+
+        <div class="recipe-content">
+            <div class="ingredients-section">
+                <h2>Ingredientes</h2>
+                <ul class="ingredients-list">
+                    <li>Shake (Salmón fresco en 2 piezas de 8cm de ancho) <span class="amount">700grs</span></li>
+                    <li><a href="shari.html">Shari</a> <span class="amount">700grs</span></li>
+                    <li>Daikon (Nabo Japonés) <span class="amount">150grs</span></li>
+                    <li>Alga Wakame secas (Remojar 6h antes) <span class="amount">10grs</span></li>
+                    <li>Perejil Crespo</li>
+                    <li>Pepinos Japoneses <span class="amount">1un</span></li>
+                    <li>Wasabi <span class="amount">10grs</span></li>
+                    <li>Salsa de soja <span class="amount">30cm3</span></li>
+                    <li>Lima <span class="amount">1un</span></li>
+                    <li>Planta pequeña de cebollín <span class="amount">1un</span></li>
+                    <li>Jengibre Fresco <span class="amount">1cdas</span></li>
+                    <li>Pickle de jengibres o Gari <span class="amount">5grs</span></li>
+                    <li>Picke de nabo amarillo <span class="amount">10grs</span></li>
+                </ul>
+            </div>
+
+            <div class="instructions-section">
+                <h2>Instrucciones</h2>
+                <ol class="instructions-list">
+                    <details closed>
+                        <summary><h3>Niguiri</h3></summary>
+                        <ol class="instructions-list">
+                            <li>Tomar con la mano derecha el bollito cilíndrico de arroz. (de 3 cm de largo y 1 1/2 cm de diámetro)</li>
+                            <li>En la mano izquierda poner un filet de salmón de 5 cm de largo.</li>
+                            <li>Colocar wasabi con la mano derecha. Luego colocar el salmón sobre el bollito de arroz, y darle una suave presión. Moldear.</li>
+                            <li>Servir con el wasabi, junto a la soja.</li>
+                        </ol>
+                    </details>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-tips">
+            <h3>💡 Observación</h3>
+            <p>Para el mejor resultado, asegúrate de usar salmón de calidad sashimi y mantenerlo refrigerado hasta el momento de servir.</p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../scripts/recipe.js"></script>
