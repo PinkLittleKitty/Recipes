@@ -1,0 +1,322 @@
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.recipe-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #2d2d2d;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.recipe-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.recipe-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.recipe-meta {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+    color: #b0b0b0;
+}
+
+.ingredients-section, .instructions-section {
+    background: #252525;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 20px 0;
+    border: 1px solid #404040;
+}
+
+.ingredients-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ingredients-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #404040;
+}
+
+.instructions-list {
+    list-style-position: inside;
+    padding: 0;
+}
+
+.instructions-list li {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.back-button {
+    display: inline-block;
+    background: #8758ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.back-button:hover {
+    background: #6e46cc;
+}
+
+.recipe-tips {
+    background: #353535;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    border: 1px solid #404040;
+}
+
+@media (max-width: 600px) {
+    .recipe-meta {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+.recipe-meta span {
+    background: #353535;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+  .ingredients-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 15px;
+      border-bottom: 1px solid #404040;
+      transition: background-color 0.2s;
+  }
+
+  .ingredient {
+      font-weight: 500;
+      flex: 1;
+  }
+
+  .amount {
+      color: #8758ff;
+      font-weight: bold;
+      padding-left: 15px;
+  }
+
+  .ingredients-list li:hover {
+      background-color: #303030;
+  }
+.ingredients-list a {
+    color: #8758ff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.ingredients-list a:hover {
+    color: #6e46cc;
+}
+
+.recipe-header h1 {
+    font-size: 2.5em;
+    color: #8758ff;
+    margin-bottom: 0.5em;
+}
+  .instructions-list li {
+      background: #303030;
+      padding: 15px 20px;
+      border-radius: 8px;
+      margin: 15px 0;
+      transition: transform 0.2s;
+      cursor: pointer;
+      user-select: none;
+  }
+
+  .instructions-list li:hover {
+      transform: translateX(10px);
+  }
+
+  .instructions-list li.completed {
+      text-decoration: line-through;
+      opacity: 0.7;
+      background: #252525;
+  }
+
+.scaling-controls {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.scaling-controls select {
+    background: #353535;
+    color: #e0e0e0;
+    border: 1px solid #404040;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.scaling-controls select:hover {
+    border-color: #8758ff;
+}
+
+.amount {
+    transition: all 0.3s ease;
+}
+
+details {
+    margin-bottom: 1.5rem;
+    background: #252525;
+    padding: 0.8rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid #404040;
+}
+
+details summary {
+    cursor: pointer;
+    padding: 0.5rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary h3 {
+    display: inline;
+    margin: 0;
+    color: #8758ff;
+    font-size: 1.2em;
+}
+
+details summary::before {
+    content: '›';
+    margin-right: 12px;
+    transition: transform 0.2s;
+    display: inline-block;
+    color: #8758ff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+details[open] {
+    padding-bottom: 1rem;
+}
+
+.instructions-list {
+    margin-top: 1rem;
+    padding-left: 2rem;
+}
+  .sushi-variants {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem 0;
+  }
+
+  .sushi-card {
+      background: #252525;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #404040;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .sushi-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(135, 88, 255, 0.2);
+      border-color: #8758ff;
+  }
+
+  .card-image {
+      position: relative;
+      overflow: hidden;
+  }
+
+  .card-image img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+  }
+
+  .sushi-card:hover .card-image img {
+      transform: scale(1.05);
+  }
+
+  .card-content {
+      padding: 1.5rem;
+  }
+
+  .card-content h2 {
+      color: #8758ff;
+      margin: 0 0 0.5rem 0;
+      font-size: 1.4rem;
+  }
+
+  .card-content p {
+      color: #b0b0b0;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+  }
+
+  .sushi-link {
+      display: inline-flex;
+      align-items: center;
+      color: #8758ff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+  }
+
+  .sushi-link .arrow {
+      margin-left: 0.5rem;
+      transition: transform 0.2s ease;
+  }
+
+  .sushi-link:hover {
+      color: #6e46cc;
+  }
+
+  .sushi-link:hover .arrow {
+      transform: translateX(5px);
+  }
+
+  .subtitle {
+      color: #b0b0b0;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+  }
+
+  @media (max-width: 600px) {
+      .sushi-variants {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+      }
+  }

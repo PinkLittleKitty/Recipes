@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Recetas</h1>
+        <div class="search-container">
+            <input type="search" id="searchRecipes" placeholder="Buscar recetas...">
+        </div>
+    </header>
+      <main class="recipe-grid">
+          <div class="recipe-card">
+              <h3>Sushi</h3>
+              <img src="images/sushi.jpg" alt="Sushi" class="recipe-image">
+              <div class="recipe-meta">
+                  <span>⏱️ _ Horas</span>
+                  <span>👥 _ Porciones</span>
+              </div>
+              <p>No sé flaco, es la receta que sé de sushi. no rompas las bolas.</p>
+              <div class="tags">
+              </div>
+              <a href="recipes/sushi.html" class="recipe-button">Ver Receta</a>
+          </div>
+    </main>
+</body>
+</html>
+
+<script>
+    const searchInput = document.getElementById('searchRecipes');
+    const recipeCards = document.querySelectorAll('.recipe-card');
+
+    searchInput.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+        
+        recipeCards.forEach(card => {
+            const title = card.querySelector('h3').textContent.toLowerCase();
+            const description = card.querySelector('p')?.textContent.toLowerCase() || '';
+            
+            if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+</script>

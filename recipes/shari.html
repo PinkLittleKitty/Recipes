@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shari (Arroz para Sushi) - Recetas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="../styles/recipe.css">
+</head>
+<body>
+    <div class="recipe-container">
+        <a href="../index.html" class="back-button">← Volver a Recetas</a>
+        <div class="recipe-header">
+            <h1>Shari (Arroz para Sushi)</h1>
+            <div class="scaling-controls">
+                <label for="servingScale">Ajustar cantidades:</label>
+                <select id="servingScale">
+                    <option value="0.5">½×</option>
+                    <option value="1" selected>1×</option>
+                    <option value="2">2×</option>
+                    <option value="3">3×</option>
+                </select>
+            </div>
+            <div class="recipe-meta">
+                <span>⏱️ Tiempo: Como 3h</span>
+                <span>👥 Porciones: <span id="servings">4</span></span>
+            </div>
+        </div>
+        <img src="../images/shari.jpg" alt="Shari (Arroz para Sushi)" class="recipe-image">
+        <section class="ingredients-section">
+            <h2>Ingredientes</h2>
+            <ul class="ingredients-list">
+                <li>
+                    <span class="ingredient">Arroz Blanco Doble Carolina Fortuna 5 Ceros</span>
+                    <span class="amount">1kg</span>
+                </li>
+                <li>
+                    <span class="ingredient">Vinagre de Arroz (O de Alcohol)</span>
+                    <span class="amount">170cm³</span>
+                </li>
+                <li>
+                    <span class="ingredient">Azúcar (o Mirin)</span>
+                    <span class="amount">130grs/150cm³</span>
+                </li>
+                <li>
+                    <span class="ingredient">Sal</span>
+                    <span class="amount">1 cdita.</span>
+                </li>
+                <li>
+                    <span class="ingredient">Sake</span>
+                    <span class="amount">3 cditas.</span>
+                </li>
+            </ul>
+        </section>
+        <section class="instructions-section">
+            <h2>Instrucciones</h2>
+            
+            <details open>
+                <summary><h3>Gohan</h3></summary>
+                <ol class="instructions-list">
+                    <li>Colocar el arroz en la cacerola y lavarlo con agua, frotándolo suavemente (Desalmidonar): Lavar en abundante agua, 7 u 8 veces sin frotar para no quebrar el grano. Cuando el agua esté limpia, escurrir bien y agregar agua nueva hasta cubrirlo de 2 a 2,5cm por encima del nivel del arroz.</li>
+                    <li>Llevar a fuego máximo y tapado de 10 a 11 minutos.</li>
+                    <li>Bajar el fuego al mínimo y cocinar 11 minutos más.</li>
+                    <li>Apagar y dejar reposar 15 minutos (cocción pasiva), sin destapar la olla.</li>
+                </ol>
+            </details>
+
+            <details open>
+                <summary><h3>Shari</h3></summary>
+                <ol class="instructions-list">
+                    <li>Colocar en un bowl pequeño el vinagre, el azúcar, la sal, y el Sake. (O mirín, sin el azúcar).</li>
+                    <li>Revolver hasta disolver el azúcar.</li>
+                    <li>Colocar el arroz caliente en un bowl grande, y verter el aderezo muy lentamente. Encender el ventilador inmediatamente y enfriar el arroz aderezado moviéndolo con la espátula. Una vez frío cubrir con una servilleta.</li>
+                    <li>Dejar reposar como mínimo 1h.</li>
+                </ol>
+            </details>
+        </section>
+        <div class="recipe-tips">
+            <h3>💡 ¿Qué es el Mirín?</h3>
+            <p>El mirín es un derivado del sake.</p>
+            <p>El mirín, como el sake, se obtienen de la fermentación alcohólica del arroz, y tienen una graduación de 14 a 18 alcohol.</p>
+            <p>Posee un color amarillento, y es dulce.</p>
+            <p>Únicamente se usa en la cocina.</p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../scripts/recipe.js"></script>

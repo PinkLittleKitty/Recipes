@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosomaki - Recetas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="../styles/recipe.css">
+</head>
+<body>
+    <div class="recipe-container">
+        <a href="sushi.html" class="back-button">← Volver a Sushi</a>
+        <div class="recipe-header">
+            <h1>Hosomaki</h1>
+            <div class="scaling-controls">
+                <label for="servingScale">Ajustar cantidades:</label>
+                <select id="servingScale">
+                    <option value="0.5">½×</option>
+                    <option value="1" selected>1×</option>
+                    <option value="2">2×</option>
+                    <option value="3">3×</option>
+                </select>
+            </div>
+            <div class="recipe-meta">
+                <span>⏱️ Tiempo: 45min</span>
+                <span>👥 Porciones: <span id="servings">4</span></span>
+            </div>
+        </div>
+        <img src="../images/hosomaki.jpg" alt="Hosomaki" class="recipe-image">
+
+        <section class="ingredients-section">
+            <h2>Ingredientes</h2>
+            <ul class="ingredients-list">
+                <li>
+                    <span class="ingredient"><a href="shari.html">Shari (Arroz para sushi)</a></span>
+                    <span class="amount">2kg</span>
+                </li>
+                <li>
+                    <span class="ingredient">Algas Nori</span>
+                    <span class="amount">6un</span>
+                </li>
+                <li>
+                    <span class="ingredient">Pepino Japonés</span>
+                    <span class="amount">2un</span>
+                </li>
+                <li>
+                    <span class="ingredient">Salmón fresco</span>
+                    <span class="amount">250g</span>
+                </li>
+                <li>
+                    <span class="ingredient">Wasabi</span>
+                    <span class="amount">5g</span>
+                </li>
+                <li>
+                    <span class="ingredient">Salsa de soja</span>
+                    <span class="amount">30cm³</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="instructions-section">
+            <h2>Instrucciones</h2>
+            <ol class="instructions-list">
+                <li>Preparar el shari.</li>
+            </ol>
+        </section>
+
+        <div class="recipe-tips">
+            <h3>💡 Tips</h3>
+            <p>Humedece el cuchillo entre cortes para lograr piezas limpias y precisas. Mantén las manos húmedas al manipular el arroz para evitar que se pegue.</p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../scripts/recipe.js"></script>
