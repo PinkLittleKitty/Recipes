@@ -352,6 +352,68 @@ details[open] .summary-chevron {
     margin-top: 6px;
 }
 
+.culture-banner {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    margin-bottom: 28px;
+}
+
+.culture-banner h2 {
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+}
+
+.culture-banner p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.culture-banner p:last-child {
+    margin-bottom: 0;
+}
+
+.benefits-section {
+    margin: 28px 0;
+}
+
+.benefits-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.benefit-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+}
+
+.benefit-pill i {
+    color: #3fb950;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.collection-variants,
 .sushi-variants {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -359,6 +421,7 @@ details[open] .summary-chevron {
     margin-top: 24px;
 }
 
+.collection-card,
 .sushi-card {
     background: var(--bg-surface);
     border: 1px solid var(--border);
@@ -369,22 +432,28 @@ details[open] .summary-chevron {
     transition: border-color 0.15s ease;
 }
 
+.collection-card:hover,
 .sushi-card:hover {
     border-color: var(--border-hover);
 }
 
+.collection-card .card-image,
 .sushi-card .card-image {
     height: 160px;
     background: var(--bg-canvas);
     overflow: hidden;
+    position: relative;
 }
 
+.collection-card .card-image img,
 .sushi-card .card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background: var(--bg-surface-subtle);
 }
 
+.collection-card .card-content,
 .sushi-card .card-content {
     padding: 16px;
     display: flex;
@@ -392,11 +461,20 @@ details[open] .summary-chevron {
     flex: 1;
 }
 
+.collection-card h2,
 .sushi-card h2 {
     font-size: 1.1rem;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
+.collection-card .card-hangul {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.collection-card p,
 .sushi-card p {
     font-size: 0.88rem;
     color: var(--text-secondary);
@@ -405,6 +483,7 @@ details[open] .summary-chevron {
     flex: 1;
 }
 
+.collection-link,
 .sushi-link {
     display: inline-flex;
     align-items: center;
@@ -415,11 +494,13 @@ details[open] .summary-chevron {
     margin-top: auto;
 }
 
+.collection-link i,
 .sushi-link i {
     font-size: 0.75rem;
     transition: transform 0.15s ease;
 }
 
+.collection-card:hover .collection-link i,
 .sushi-card:hover .sushi-link i {
     transform: translateX(3px);
 }
@@ -434,7 +515,12 @@ details[open] .summary-chevron {
         align-items: flex-start;
     }
 
+    .collection-variants,
     .sushi-variants {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-grid {
         grid-template-columns: 1fr;
     }
 }

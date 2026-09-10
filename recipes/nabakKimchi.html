@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabak Kimchi - Recetas</title>
+    <meta name="description"
+        content="Receta tradicional de Nabak Kimchi (나박김치): kimchi refrescante de caldo translúcido con láminas de nabo y baechu.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <link rel="stylesheet" href="../styles/recipe.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <article class="recipe-container">
+            <nav class="recipe-nav" aria-label="Navegación de receta">
+                <a href="kimjang.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Volver a Kimjang</a>
+                <button id="printRecipeBtn" class="btn-ghost" title="Imprimir"><i class="fa-solid fa-print"></i>
+                    Imprimir</button>
+            </nav>
+
+            <header class="recipe-header">
+                <h1>Nabak Kimchi</h1>
+                <p class="subtitle">나박김치 · Kimchi refrescante de láminas de nabo y caldo</p>
+
+                <div class="recipe-meta-row">
+                    <span><i class="fa-regular fa-clock"></i> 20 min macerado + 4 días frío</span>
+                    <span><i class="fa-solid fa-user-group"></i> <span id="servings">6</span> porciones</span>
+                </div>
+            </header>
+
+            <div class="recipe-hero-image-wrap">
+                <img src="../images/nabak.jpg" alt="Nabak Kimchi" class="recipe-image"
+                    onerror="this.onerror=null; this.src='../images/placeholder.svg';" loading="lazy">
+            </div>
+
+            <div class="recipe-controls-bar">
+                <div class="scaling-group">
+                    <label for="servingScale">Porciones:</label>
+                    <select id="servingScale" class="scale-select" aria-label="Escala de porciones">
+                        <option value="0.5">½×</option>
+                        <option value="1" selected>1×</option>
+                        <option value="2">2×</option>
+                        <option value="3">3×</option>
+                    </select>
+                </div>
+                <div class="timer-inline" data-seconds="1200">
+                    <span class="timer-display">20:00</span>
+                    <button class="timer-btn timer-start-btn"><i class="fa-solid fa-play"></i> Iniciar</button>
+                    <button class="timer-btn timer-reset-btn" title="Reiniciar"><i
+                            class="fa-solid fa-rotate-left"></i></button>
+                </div>
+            </div>
+
+            <section class="recipe-section ingredients-section" aria-labelledby="ingredientsHeading">
+                <div class="section-header">
+                    <h2 id="ingredientsHeading" class="section-title">Ingredientes</h2>
+                </div>
+                <ul class="ingredients-list">
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Nabo (cortado en láminas finas de 3×2,5 cm)</span>
+                        </label>
+                        <span class="amount">500g</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Corazón de baechu (cortado en láminas de 3×2,5 cm)</span>
+                        </label>
+                        <span class="amount">300g</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Verdeo (parte blanca cortada en tiras de 3 cm)</span>
+                        </label>
+                        <span class="amount">6cm</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Ajo (cortado en láminas muy finas)</span>
+                        </label>
+                        <span class="amount">2 dientes</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Jengibre (cortado en finas tiras, tamaño de 1 diente)</span>
+                        </label>
+                        <span class="amount">5g</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Ají rojo o jalapeño (en juliana de 3 cm, sin semillas)</span>
+                        </label>
+                        <span class="amount">1u</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Gochugaru (ají molido coreano para tintura)</span>
+                        </label>
+                        <span class="amount">2 cdas.</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Azúcar</span>
+                        </label>
+                        <span class="amount">1 cda.</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Sal gruesa o entrefina</span>
+                        </label>
+                        <span class="amount">3 cdas.</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Agua potable (o filtrada)</span>
+                        </label>
+                        <span class="amount">2l</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="recipe-section instructions-section" aria-labelledby="instructionsHeading">
+                <div class="section-header">
+                    <h2 id="instructionsHeading" class="section-title">Procedimiento</h2>
+                </div>
+
+                <ol class="instructions-list">
+                    <li>Cortar el nabo y las hojas interiores tiernas del baechu en láminas rectangulares parejas de 3 ×
+                        2.5 cm.</li>
+                    <li>Colocar el nabo y el baechu en un bowl, espolvorear 2 cucharadas de sal y mezclar suavemente.
+                        Dejar reposar durante 20 minutos para que comiencen a ablandarse sin perder crocancia.</li>
+                    <li>En un cuenco aparte con un poco de agua tibia, hidratar las 2 cucharadas de gochugaru. Luego
+                        pasar el líquido por un colador fino o lienzo/gasa presionando suavemente para filtrar los
+                        copos gruesos y extraer un líquido rojizo diáfano y translúcido.</li>
+                    <li>Disolver en los 2 litros de agua restante la cucharada restante de sal y la cucharada de azúcar,
+                        integrando luego el agua infusionada con gochugaru.</li>
+                    <li>Agregar al bowl del nabo y baechu las tiras blancas de verdeo, las láminas de ajo, las hebras de
+                        jengibre y la juliana de ají rojo sin semillas.</li>
+                    <li>Verter el caldo sobre las verduras, mezclar con suavidad y transferir a un recipiente de vidrio
+                        o cerámico hermético.</li>
+                    <li>Dejar fermentar durante 24 horas a temperatura ambiente y luego guardar durante 4 días en la
+                        heladera antes de consumirlo para que desarrolle su sabor equilibrado y refrescante.</li>
+                </ol>
+            </section>
+
+            <aside class="recipe-tips">
+                <h3><i class="fa-regular fa-lightbulb"></i> Mul-Kimchi (Kimchi de Agua)</h3>
+                <p><strong>Filtrado del Gochugaru:</strong> Al colar el gochugaru a través de un lienzo o colador muy
+                    fino
+                    obtenemos ese tono rosa rubí tan característico sin la presencia de restos gruesos de ají, dando un
+                    caldo ligero que se saborea como una sopa fría refrescante.</p>
+                <p><strong>Servicio:</strong> Se sirve en cuencos pequeños con un cucharón, asegurándose de incluir
+                    tanto láminas de verduras como su caldo efervescente.</p>
+            </aside>
+        </article>
+    </div>
+
+    <script src="../scripts/recipe.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimchi y Kimjang</title>
+    <meta name="description" content="Kimchi: Bechu phogui, Kakdugui, Nabak kimchi y Oi kimchi.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <link rel="stylesheet" href="../styles/recipe.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="recipe-container">
+            <nav class="recipe-nav" aria-label="Navegación">
+                <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Volver a Recetas</a>
+                <button id="printRecipeBtn" class="btn-ghost" title="Imprimir"><i class="fa-solid fa-print"></i>
+                    Imprimir</button>
+            </nav>
+
+            <header class="recipe-header">
+                <h1>Kimchi y Kimjang</h1>
+            </header>
+
+            <div class="recipe-hero-image-wrap">
+                <img src="../images/kimchiykimjang.jpg" alt="Kimchi y Kimjang" class="recipe-image"
+                    onerror="this.onerror=null; this.src='../images/placeholder.svg';" loading="lazy">
+            </div>
+
+            <section class="culture-banner">
+                <h2>¿Qué es el Kimchi 김치?</h2>
+                <p>El <strong>kimchi (김치)</strong> es mucho más que un simple acompañamiento: es el alma de la cocina
+                    coreana, un alimento fermentado lleno de sabor, historia y beneficios para la salud. Pero su
+                    preparación también es una experiencia especial que se vive en comunidad.</p>
+            </section>
+
+            <section class="benefits-section">
+                <h3><i class="fa-solid fa-heart-pulse"></i> Los beneficios del Kimchi</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-pill"><i class="fa-solid fa-check"></i> <span>Mejora significativamente la
+                            digestión</span></div>
+                    <div class="benefit-pill"><i class="fa-solid fa-check"></i> <span>Fortalece el sistema
+                            inmunológico</span></div>
+                    <div class="benefit-pill"><i class="fa-solid fa-check"></i> <span>Aporta vitaminas A, B y C</span>
+                    </div>
+                    <div class="benefit-pill"><i class="fa-solid fa-check"></i> <span>Equilibra la microbiota
+                            intestinal</span></div>
+                    <div class="benefit-pill"><i class="fa-solid fa-check"></i> <span>Alimento probiótico
+                            natural</span></div>
+                    <div class="benefit-pill"><i class="fa-solid fa-check"></i> <span>Poderoso antioxidante</span></div>
+                    <div class="benefit-pill"><i class="fa-solid fa-check"></i> <span>Bajo en calorías</span></div>
+                </div>
+            </section>
+
+            <main class="collection-variants">
+                <article class="collection-card">
+                    <div class="card-image">
+                        <img src="../images/BechuPogui.jpeg" alt="Bechu phogui kimchi"
+                            onerror="this.onerror=null; this.src='../images/placeholder.svg';" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h2>Bechu phogui kimchi</h2>
+                        <span class="card-hangul">배추포기김치 · Kimchi de col</span>
+                        <p>Col curada en salazón con engrudo de arroz, pasta de gochugaru, nabo en juliana y
+                            salsa de pescado.</p>
+                        <a href="bechuKimchi.html" class="collection-link">Ver receta <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="collection-card">
+                    <div class="card-image">
+                        <img src="../images/kakdugui.jpg" alt="Kakdugui"
+                            onerror="this.onerror=null; this.src='../images/placeholder.svg';" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h2>Kakdugui</h2>
+                        <span class="card-hangul">깍두기 · Kimchi de cubitos de nabo</span>
+                        <p>Cubos crocantes de nabo macerados con sal y azúcar, teñidos de rojo con gochugaru y sazonados
+                            con
+                            krill y verdeo.</p>
+                        <a href="kakdugui.html" class="collection-link">Ver receta <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="collection-card">
+                    <div class="card-image">
+                        <img src="../images/nabak.jpg" alt="Nabak Kimchi"
+                            onerror="this.onerror=null; this.src='../images/placeholder.svg';" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h2>Nabak Kimchi</h2>
+                        <span class="card-hangul">나박김치 · Kimchi de láminas de nabo y caldo</span>
+                        <p>Versión refrescante y sutil servida en su caldo translúcido de gochugaru filtrado con láminas
+                            de
+                            nabo y corazón de baechu.</p>
+                        <a href="nabakKimchi.html" class="collection-link">Ver receta <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="collection-card">
+                    <div class="card-image">
+                        <img src="../images/oikimchi.jpg" alt="Oi kimchi"
+                            onerror="this.onerror=null; this.src='../images/placeholder.svg';" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h2>Oi kimchi</h2>
+                        <span class="card-hangul">오이김치 · Kimchi de pepino relleno</span>
+                        <p>Pepinos enteros cortados en cruz en forma de flor, escaldados para lograr máxima textura
+                            crujiente
+                            y rellenos con nira y zanahoria.</p>
+                        <a href="oiKimchi.html" class="collection-link">Ver receta <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </div>
+    <script src="../scripts/recipe.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bechu phogui kimchi - Recetas</title>
+    <meta name="description"
+        content="Receta tradicional de Bechu phogui kimchi (배추포기김치): col curada con salmuera, engrudo y pasta de gochugaru.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <link rel="stylesheet" href="../styles/recipe.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <article class="recipe-container">
+            <nav class="recipe-nav" aria-label="Navegación de receta">
+                <a href="kimjang.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Volver a Kimjang</a>
+                <button id="printRecipeBtn" class="btn-ghost" title="Imprimir"><i class="fa-solid fa-print"></i>
+                    Imprimir</button>
+            </nav>
+
+            <header class="recipe-header">
+                <h1>Bechu phogui kimchi</h1>
+                <p class="subtitle">배추포기김치 · Kimchi clásico de col</p>
+
+                <div class="recipe-meta-row">
+                    <span><i class="fa-regular fa-clock"></i> ~4h salado + fermentación</span>
+                    <span><i class="fa-solid fa-user-group"></i> <span id="servings">4</span> porciones</span>
+                </div>
+            </header>
+
+            <div class="recipe-hero-image-wrap">
+                <img src="../images/BechuPogui.jpeg" alt="Bechu phogui kimchi" class="recipe-image"
+                    onerror="this.onerror=null; this.src='../images/placeholder.svg';" loading="lazy">
+            </div>
+
+            <div class="recipe-controls-bar">
+                <div class="scaling-group">
+                    <label for="servingScale">Porciones:</label>
+                    <select id="servingScale" class="scale-select" aria-label="Escala de porciones">
+                        <option value="0.5">½×</option>
+                        <option value="1" selected>1×</option>
+                        <option value="2">2×</option>
+                        <option value="3">3×</option>
+                    </select>
+                </div>
+                <div class="timer-inline" data-seconds="7200">
+                    <span class="timer-display">120:00</span>
+                    <button class="timer-btn timer-start-btn"><i class="fa-solid fa-play"></i> Iniciar</button>
+                    <button class="timer-btn timer-reset-btn" title="Reiniciar"><i
+                            class="fa-solid fa-rotate-left"></i></button>
+                </div>
+            </div>
+
+            <section class="recipe-section ingredients-section" aria-labelledby="ingredientsHeading">
+                <div class="section-header">
+                    <h2 id="ingredientsHeading" class="section-title">Ingredientes</h2>
+                </div>
+                <ul class="ingredients-list">
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Bechu limpio (col / akusai)</span>
+                        </label>
+                        <span class="amount">1kg</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Sal gruesa (para curado)</span>
+                        </label>
+                        <span class="amount">100g</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Nabo (en juliana)</span>
+                        </label>
+                        <span class="amount">180g</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Gochugaru (ají molido coreano)</span>
+                        </label>
+                        <span class="amount">54g</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Cebolla</span>
+                        </label>
+                        <span class="amount">40g</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Cebolla de verdeo ciselada</span>
+                        </label>
+                        <span class="amount">30g</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Ajo</span>
+                        </label>
+                        <span class="amount">16g</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Jengibre</span>
+                        </label>
+                        <span class="amount">4g</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Azúcar</span>
+                        </label>
+                        <span class="amount">5g</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Arroz cocido (procesar con igual cantidad de agua)</span>
+                        </label>
+                        <span class="amount">26g</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Salsa de pescado</span>
+                        </label>
+                        <span class="amount">20cc</span>
+                    </li>
+                </ul>
+
+                <details open>
+                    <summary>
+                        <h3>Engrudo para el condimento</h3>
+                        <i class="fa-solid fa-chevron-right summary-chevron"></i>
+                    </summary>
+                    <div class="details-content">
+                        <ul class="ingredients-list">
+                            <li>
+                                <label class="ingredient-left">
+                                    <input type="checkbox" class="ingredient-checkbox">
+                                    <span class="ingredient">Harina de arroz o trigo</span>
+                                </label>
+                                <span class="amount">15g</span>
+                            </li>
+                            <li>
+                                <label class="ingredient-left">
+                                    <input type="checkbox" class="ingredient-checkbox">
+                                    <span class="ingredient">Agua</span>
+                                </label>
+                                <span class="amount">150ml</span>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+            </section>
+
+            <section class="recipe-section instructions-section" aria-labelledby="instructionsHeading">
+                <div class="section-header">
+                    <h2 id="instructionsHeading" class="section-title">Procedimiento</h2>
+                </div>
+
+                <details open>
+                    <summary>
+                        <h3>1. Salado del Bechu</h3>
+                        <i class="fa-solid fa-chevron-right summary-chevron"></i>
+                    </summary>
+                    <div class="details-content">
+                        <ol class="instructions-list">
+                            <li>Cortar el bechu longitudinalmente en 4 partes.</li>
+                            <li>Enjuagar las piezas en agua tibia o fría.</li>
+                            <li>A cada capa del bechu, especialmente sobre la parte más gruesa del tronco, espolvorear
+                                la sal gruesa racionando bien para que los 100 g alcancen para todo el bechu.</li>
+                            <li>Colocar en un bowl durante 2 horas. Pasado este tiempo, redistribuir las piezas
+                                (rotando las de arriba hacia abajo y viceversa) para que la sal actúe de manera
+                                uniforme.
+                            </li>
+                            <li>Dejar reposar durante 2 horas más. (En días fríos de baja temperatura este proceso puede
+                                demorar entre 6 y 8 horas).</li>
+                            <li>Cuando el bechu esté flexible y doble sin quebrarse, lavarlo 3 veces en abundante agua
+                                fría para retirar el exceso de sal y dejar escurrir muy bien sobre un colador.</li>
+                        </ol>
+                    </div>
+                </details>
+
+                <details open>
+                    <summary>
+                        <h3>2. Engrudo y Preparación del Condimento</h3>
+                        <i class="fa-solid fa-chevron-right summary-chevron"></i>
+                    </summary>
+                    <div class="details-content">
+                        <ol class="instructions-list">
+                            <li>Disolver la harina de arroz o trigo en los 150 ml de agua en una cacerolita. Llevar a
+                                hervor suave revolviendo continuamente hasta obtener un engrudo traslúcido y espeso.
+                                Dejar enfriar por completo.</li>
+                            <li>Cortar el nabo en juliana fina, agregarle la mitad del gochugaru y masajear suavemente
+                                para que tome un vivo color rojo.</li>
+                            <li>Procesar en licuadora o procesadora la cebolla, el ajo y el jengibre junto con el arroz
+                                cocido y su equivalente de agua.</li>
+                            <li>Juntar en un recipiente amplio todos los componentes: el nabo teñido, la mezcla
+                                procesada,
+                                el engrudo ya frío, el resto del gochugaru, la cebolla de verdeo ciselada, el azúcar y
+                                la
+                                salsa de pescado. Mezclar muy bien con la mano protegida con guante.</li>
+                        </ol>
+                    </div>
+                </details>
+
+                <details open>
+                    <summary>
+                        <h3>3. Relleno y Fermentación</h3>
+                        <i class="fa-solid fa-chevron-right summary-chevron"></i>
+                    </summary>
+                    <div class="details-content">
+                        <ol class="instructions-list">
+                            <li>Tomar cada cuarto de bechu y untar generosamente el condimento entre cada una de sus
+                                capas de hojas, desde la base blanca hasta las puntas.</li>
+                            <li>Plegar las hojas exteriores hacia el centro para formar un paquete compacto.</li>
+                            <li>Guardar el kimchi en un recipiente con tapa hermética, presionándolo firmemente hacia el
+                                fondo para eliminar cualquier burbuja de aire (el kimchi fermenta mejor en ausencia de
+                                oxígeno).</li>
+                            <li>Dejar fermentar a temperatura ambiente entre 12 y 24 horas para iniciar la actividad
+                                láctica, y luego trasladar a la heladera para que continúe madurando lentamente.</li>
+                        </ol>
+                    </div>
+                </details>
+            </section>
+
+            <aside class="recipe-tips">
+                <h3><i class="fa-regular fa-lightbulb"></i> Secretos de Fermentación</h3>
+                <p><strong>El rol del engrudo:</strong> La harina cocida y el arroz procesado aportan los almidones que
+                    alimentan a las bacterias lácticas encargadas de la fermentación y ayudan a que la pasta de
+                    condimento
+                    se adhiera uniformemente a las hojas del bechu.</p>
+                <p><strong>Cuidado con el aire:</strong> Presionar bien las hojas dentro del frasco y mantenerlo bien
+                    cerrado evita la proliferación de levaduras indeseadas y garantiza un kimchi crujiente y aromático.
+                </p>
+            </aside>
+        </article>
+    </div>
+
+    <script src="../scripts/recipe.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakdugui - Recetas</title>
+    <meta name="description"
+        content="Receta tradicional de Kakdugui (깍두기): kimchi crocante de cubitos de nabo macerados con gochugaru y krill.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <link rel="stylesheet" href="../styles/recipe.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <article class="recipe-container">
+            <nav class="recipe-nav" aria-label="Navegación de receta">
+                <a href="kimjang.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Volver a Kimjang</a>
+                <button id="printRecipeBtn" class="btn-ghost" title="Imprimir"><i class="fa-solid fa-print"></i>
+                    Imprimir</button>
+            </nav>
+
+            <header class="recipe-header">
+                <h1>Kakdugui</h1>
+                <p class="subtitle">깍두기 · Kimchi de cubitos de nabo</p>
+
+                <div class="recipe-meta-row">
+                    <span><i class="fa-regular fa-clock"></i> ~1h reposo + fermentación</span>
+                    <span><i class="fa-solid fa-user-group"></i> <span id="servings">4</span> porciones</span>
+                </div>
+            </header>
+
+            <div class="recipe-hero-image-wrap">
+                <img src="../images/kakdugui.jpg" alt="Kakdugui" class="recipe-image"
+                    onerror="this.onerror=null; this.src='../images/placeholder.svg';" loading="lazy">
+            </div>
+
+            <div class="recipe-controls-bar">
+                <div class="scaling-group">
+                    <label for="servingScale">Porciones:</label>
+                    <select id="servingScale" class="scale-select" aria-label="Escala de porciones">
+                        <option value="0.5">½×</option>
+                        <option value="1" selected>1×</option>
+                        <option value="2">2×</option>
+                        <option value="3">3×</option>
+                    </select>
+                </div>
+                <div class="timer-inline" data-seconds="2400">
+                    <span class="timer-display">40:00</span>
+                    <button class="timer-btn timer-start-btn"><i class="fa-solid fa-play"></i> Iniciar</button>
+                    <button class="timer-btn timer-reset-btn" title="Reiniciar"><i
+                            class="fa-solid fa-rotate-left"></i></button>
+                </div>
+            </div>
+
+            <section class="recipe-section ingredients-section" aria-labelledby="ingredientsHeading">
+                <div class="section-header">
+                    <h2 id="ingredientsHeading" class="section-title">Ingredientes</h2>
+                </div>
+                <ul class="ingredients-list">
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Nabo (cortado en cubos)</span>
+                        </label>
+                        <span class="amount">1kg</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Sal</span>
+                        </label>
+                        <span class="amount">20g</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Azúcar</span>
+                        </label>
+                        <span class="amount">20g</span>
+                    </li>
+                </ul>
+
+                <details open>
+                    <summary>
+                        <h3>Relleno y Sazón</h3>
+                        <i class="fa-solid fa-chevron-right summary-chevron"></i>
+                    </summary>
+                    <div class="details-content">
+                        <ul class="ingredients-list">
+                            <li>
+                                <label class="ingredient-left">
+                                    <input type="checkbox" class="ingredient-checkbox">
+                                    <span class="ingredient">Ajo (picado fino)</span>
+                                </label>
+                                <span class="amount">20g</span>
+                            </li>
+                            <li>
+                                <label class="ingredient-left">
+                                    <input type="checkbox" class="ingredient-checkbox">
+                                    <span class="ingredient">Jengibre (rallado o en pasta)</span>
+                                </label>
+                                <span class="amount">5g</span>
+                            </li>
+                            <li>
+                                <label class="ingredient-left">
+                                    <input type="checkbox" class="ingredient-checkbox">
+                                    <span class="ingredient">Cebolla de verdeo</span>
+                                </label>
+                                <span class="amount">40g</span>
+                            </li>
+                            <li>
+                                <label class="ingredient-left">
+                                    <input type="checkbox" class="ingredient-checkbox">
+                                    <span class="ingredient">Gochugaru (ají molido coreano)</span>
+                                </label>
+                                <span class="amount">25g</span>
+                            </li>
+                            <li>
+                                <label class="ingredient-left">
+                                    <input type="checkbox" class="ingredient-checkbox">
+                                    <span class="ingredient">Krill en salmuera (saeujeot)</span>
+                                </label>
+                                <span class="amount">10g</span>
+                            </li>
+                            <li>
+                                <label class="ingredient-left">
+                                    <input type="checkbox" class="ingredient-checkbox">
+                                    <span class="ingredient">Sal extra</span>
+                                </label>
+                                <span class="amount">al gusto</span>
+                            </li>
+                            <li>
+                                <label class="ingredient-left">
+                                    <input type="checkbox" class="ingredient-checkbox">
+                                    <span class="ingredient">Azúcar extra</span>
+                                </label>
+                                <span class="amount">al gusto</span>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+            </section>
+
+            <section class="recipe-section instructions-section" aria-labelledby="instructionsHeading">
+                <div class="section-header">
+                    <h2 id="instructionsHeading" class="section-title">Procedimiento</h2>
+                </div>
+
+                <ol class="instructions-list">
+                    <li>Pelar el nabo y cortarlo en cubitos parejos del tamaño de un dado (aprox. 2 a 2.5 cm de lado).
+                    </li>
+                    <li>Colocar los cubitos en un bowl amplio, rociarlos de manera homogénea con la sal y los 20 g de
+                        azúcar, y mezclar bien con las manos para distribuir los cristales en toda la superficie.</li>
+                    <li>Dejar reposar entre 40 minutos y 1 hora para que el nabo suelte parte de su líquido y desarrolle
+                        su textura crocante característica.</li>
+                    <li>Incorporar el gochugaru directamente al nabo y mezclar con movimientos suaves hasta que todos los
+                        cubitos queden uniformemente teñidos de rojo brillante.</li>
+                    <li>Agregar el resto de los ingredientes del relleno (el ajo, el jengibre rallado, la cebolla de
+                        verdeo y el krill en salmuera). Mezclar todo con movimientos delicados para no romper los
+                        cubos de verdura. Probar y rectificar sal o azúcar de ser necesario.</li>
+                    <li>Guardar el kimchi en un frasco o recipiente con tapa hermética, colocándolo bien apretado y
+                        presionando para expulsar bolsas de aire. Tapar herméticamente.</li>
+                    <li>Reservar a temperatura ambiente de 12 a 24 horas y luego conservar en la heladera para que
+                        continúe fermentando lentamente y madurando sus sabores.</li>
+                </ol>
+            </section>
+
+            <aside class="recipe-tips">
+                <h3><i class="fa-regular fa-lightbulb"></i> Textura y Notas Tradicionales</h3>
+                <p><strong>El secreto del curado:</strong> Combinar sal y azúcar en el macerado inicial del nabo extrae el
+                    agua amarga natural y fija un crocante insuperable que perdura durante semanas de fermentación.</p>
+                <p><strong>Krill en salmuera:</strong> El krill fermentado coreano (<em>saeujeot</em>) aporta salinidad y
+                    complejidad enzimática. Si no tienes a mano, puedes sustituirlo por una cucharada de salsa de
+                    pescado de buena calidad.</p>
+            </aside>
+        </article>
+    </div>
+
+    <script src="../scripts/recipe.js"></script>
+</body>
+
+</html>
