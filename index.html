@@ -27,13 +27,10 @@
                 </button>
             </div>
 
-            <div class="filter-categories" role="group" aria-label="Filtrar por categoría">
+            <div class="filter-categories" role="group" aria-label="Filtrar por colección">
                 <button class="filter-pill active" data-category="all">Todas</button>
-                <button class="filter-pill" data-category="kimchi">Kimchi y Kimjang</button>
-                <button class="filter-pill" data-category="sushi">Sushi</button>
-                <button class="filter-pill" data-category="basicos">Básicos</button>
-                <button class="filter-pill" data-category="pescados">Pescados</button>
-                <button class="filter-pill" data-category="especiales">Especiales</button>
+                <button class="filter-pill" data-category="japonesa">Japonesa</button>
+                <button class="filter-pill" data-category="coreana">Coreana</button>
             </div>
         </div>
     </header>
@@ -41,239 +38,328 @@
     <main class="catalog-section">
         <div class="container">
             <div class="catalog-header">
-                <span class="catalog-title">Todas las recetas</span>
-                <span id="recipeCount" class="catalog-count">13 recetas</span>
+                <span class="catalog-title">Colecciones y Recetas</span>
+                <span id="recipeCount" class="catalog-count">17 recetas</span>
             </div>
 
-            <div class="recipe-grid" id="recipeGrid">
-                <article class="recipe-card" data-category="basicos">
-                    <div class="card-media-wrapper">
-                        <img src="images/sushi.jpg" alt="Shari" class="recipe-image" loading="lazy">
-                    </div>
-                    <div class="recipe-card-content">
-                        <h3>Shari (Arroz para Sushi)</h3>
-                        <div class="card-meta-line">
-                            <span><i class="fa-regular fa-clock"></i> 45 min</span>
-                            <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
-                        </div>
-                        <p class="recipe-card-description">Base de arroz avinagrado: técnica de cocción de gohan y
-                            preparación del aderezo.</p>
-                        <a href="recipes/shari.html" class="card-action-link">Ver receta <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-category="sushi">
-                    <div class="card-media-wrapper">
-                        <img src="images/sushi.jpg" alt="Hosomaki" class="recipe-image" loading="lazy">
-                    </div>
-                    <div class="recipe-card-content">
-                        <h3>Hosomaki</h3>
-                        <div class="card-meta-line">
-                            <span><i class="fa-regular fa-clock"></i> 45 min</span>
-                            <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
-                        </div>
-                        <p class="recipe-card-description">Rolls finos con alga nori exterior, rellenos de salmón,
-                            pepino o tamagoyaki.</p>
-                        <a href="recipes/hosomaki.html" class="card-action-link">Ver receta <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-category="sushi">
-                    <div class="card-media-wrapper">
-                        <img src="images/uramaki.jpg" alt="Uramaki" class="recipe-image" loading="lazy">
-                    </div>
-                    <div class="recipe-card-content">
-                        <h3>Uramaki</h3>
-                        <div class="card-meta-line">
-                            <span><i class="fa-regular fa-clock"></i> 45 min</span>
-                            <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
-                        </div>
-                        <p class="recipe-card-description">Rolls invertidos: New York Roll y Tuna Roll.</p>
-                        <a href="recipes/uramaki.html" class="card-action-link">Ver receta <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-category="sushi">
-                    <div class="card-media-wrapper">
-                        <img src="images/garamaki.jpg" alt="Garamaki" class="recipe-image" loading="lazy">
-                    </div>
-                    <div class="recipe-card-content">
-                        <h3>Garamaki</h3>
-                        <div class="card-meta-line">
-                            <span><i class="fa-regular fa-clock"></i> 45 min</span>
-                            <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
-                        </div>
-                        <p class="recipe-card-description">Roll crocante con lenguado en panko, espárragos, queso
-                            philadelphia y salsa de sésamo.</p>
-                        <a href="recipes/garamaki.html" class="card-action-link">Ver receta <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-category="sushi">
-                    <div class="card-media-wrapper">
-                        <img src="images/gunkanMaki.jpg" alt="Gunkan Maki" class="recipe-image" loading="lazy">
-                    </div>
-                    <div class="recipe-card-content">
-                        <h3>Gunkan Maki</h3>
-                        <div class="card-meta-line">
-                            <span><i class="fa-regular fa-clock"></i> 40 min</span>
-                            <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
-                        </div>
-                        <p class="recipe-card-description">Piezas en forma de barco envueltas en nori con caviar ikura,
-                            tartare de salmón o kanikama.</p>
-                        <a href="recipes/gunkanMaki.html" class="card-action-link">Ver receta <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-category="pescados">
-                    <div class="card-media-wrapper">
-                        <img src="images/nigiriSashimi.jpg" alt="Niguiri y Sashimi" class="recipe-image" loading="lazy">
-                    </div>
-                    <div class="recipe-card-content">
-                        <h3>Niguiri y Sashimi de Salmón</h3>
-                        <div class="card-meta-line">
-                            <span><i class="fa-regular fa-clock"></i> 40 min</span>
-                            <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
-                        </div>
-                        <p class="recipe-card-description">Bollitos de arroz moldeados a mano con salmón
-                            y láminas de sashimi.</p>
-                        <a href="recipes/nigiriSashimi.html" class="card-action-link">Ver receta <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-category="especiales">
-                    <div class="card-media-wrapper">
-                        <img src="images/sushiCake.jpg" alt="Sushi Cake de Langostinos" class="recipe-image"
-                            loading="lazy">
-                    </div>
-                    <div class="recipe-card-content">
-                        <h3>Sushi Cake de Langostinos</h3>
-                        <div class="card-meta-line">
-                            <span><i class="fa-regular fa-clock"></i> 60 min</span>
-                            <span><i class="fa-solid fa-user-group"></i> 8 porciones</span>
-                        </div>
-                        <p class="recipe-card-description">Torta salada en capas con langostinos al limón, pasta de
-                            salmón y flor de lenguado.</p>
-                        <a href="recipes/sushiCake.html" class="card-action-link">Ver receta <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-category="sushi">
-                    <div class="card-media-wrapper">
-                        <img src="images/sushi.jpg" alt="Variedades de Sushi" class="recipe-image" loading="lazy">
-                    </div>
-                    <div class="recipe-card-content">
-                        <h3>Variedades de Sushi</h3>
-                        <div class="card-meta-line">
-                            <span><i class="fa-solid fa-book-open"></i> 6 variedades</span>
-                        </div>
-                        <p class="recipe-card-description">Índice general con las variedades de sushi.</p>
-                        <a href="recipes/sushi.html" class="card-action-link">Ver colección <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-category="kimchi">
-                    <div class="card-media-wrapper">
-                        <img src="images/kimchiykimjang.jpg" alt="Kimchi y Kimjang" class="recipe-image"
-                            onerror="this.onerror=null; this.src='images/placeholder.svg';" loading="lazy">
-                    </div>
-                    <div class="recipe-card-content">
-                        <h3>Kimchi y Kimjang</h3>
-                        <div class="card-meta-line">
-                            <span><i class="fa-solid fa-book-open"></i> 4 variedades</span>
-                        </div>
-                        <p class="recipe-card-description">Las 4 variedades tradicionales, e información extra.</p>
-                        <a href="recipes/kimjang.html" class="card-action-link">Ver colección <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-category="kimchi">
-                    <div class="card-media-wrapper">
-                        <img src="images/BechuPogui.jpeg" alt="Bechu phogui kimchi" class="recipe-image"
-                            onerror="this.onerror=null; this.src='images/placeholder.svg';" loading="lazy">
-                    </div>
-                    <div class="recipe-card-content">
-                        <h3>Bechu phogui kimchi</h3>
-                        <div class="card-meta-line">
-                            <span><i class="fa-regular fa-clock"></i> ~4h salado</span>
-                            <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
-                        </div>
-                        <p class="recipe-card-description">Kimchi tradicional de col (akusai) con salazón,
-                            engrudo de harina de arroz y aromático condimento de gochugaru.</p>
-                        <a href="recipes/bechuKimchi.html" class="card-action-link">Ver receta <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-category="kimchi">
-                    <div class="card-media-wrapper">
-                        <img src="images/kakdugui.jpg" alt="Kakdugui" class="recipe-image"
-                            onerror="this.onerror=null; this.src='images/placeholder.svg';" loading="lazy">
-                    </div>
-                    <div class="recipe-card-content">
-                        <h3>Kakdugui</h3>
-                        <div class="card-meta-line">
-                            <span><i class="fa-regular fa-clock"></i> 40 min</span>
-                            <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
-                        </div>
-                        <p class="recipe-card-description">Kimchi crocante de cubitos de nabo macerados con sal y
-                            azúcar, teñidos al gochugaru y sazonados con krill.</p>
-                        <a href="recipes/kakdugui.html" class="card-action-link">Ver receta <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-category="kimchi">
-                    <div class="card-media-wrapper">
-                        <img src="images/nabak.jpg" alt="Nabak Kimchi" class="recipe-image"
-                            onerror="this.onerror=null; this.src='images/placeholder.svg';" loading="lazy">
-                    </div>
-                    <div class="recipe-card-content">
-                        <h3>Nabak Kimchi</h3>
-                        <div class="card-meta-line">
-                            <span><i class="fa-regular fa-clock"></i> 20 min</span>
-                            <span><i class="fa-solid fa-user-group"></i> 6 porciones</span>
-                        </div>
-                        <p class="recipe-card-description">Kimchi refrescante de agua con láminas finas de nabo y baechu
-                            en caldo filtrado de gochugaru y jalapeño.</p>
-                        <a href="recipes/nabakKimchi.html" class="card-action-link">Ver receta <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <article class="recipe-card" data-category="kimchi">
-                    <div class="card-media-wrapper">
-                        <img src="images/oikimchi.jpg" alt="Oi kimchi" class="recipe-image"
-                            onerror="this.onerror=null; this.src='images/placeholder.svg';" loading="lazy">
-                    </div>
-                    <div class="recipe-card-content">
-                        <h3>Oi kimchi</h3>
-                        <div class="card-meta-line">
-                            <span><i class="fa-regular fa-clock"></i> 40 min</span>
-                            <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
-                        </div>
-                        <p class="recipe-card-description">Pepinos cortados en flor y escaldados para conservar textura
-                            supercrocante, rellenos con nira, verdeo y zanahoria.</p>
-                        <a href="recipes/oiKimchi.html" class="card-action-link">Ver receta <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <div id="emptyState" class="empty-state">
-                    <i class="fa-solid fa-folder-open"></i>
-                    <h3>No se encontraron recetas</h3>
-                    <p>Prueba con otros términos de búsqueda.</p>
-                    <button id="resetFiltersBtn" class="btn-secondary">Restablecer filtros</button>
+            <section class="cuisine-section" data-cuisine="japonesa">
+                <div class="cuisine-header">
+                    <h2><i class="fa-solid fa-fish-fins"></i> Cocina Japonesa</h2>
+                    <span class="cuisine-count">8 recetas</span>
                 </div>
+
+                <div class="recipe-grid">
+                    <article class="recipe-card" data-category="japonesa">
+                        <div class="card-media-wrapper">
+                            <img src="images/sushi.jpg" alt="Variedades de Sushi" class="recipe-image" loading="lazy">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Variedades de Sushi</h3>
+                            <div class="card-meta-line">
+                                <span><i class="fa-solid fa-book-open"></i> 6 variedades</span>
+                            </div>
+                            <p class="recipe-card-description">Índice general con las técnicas y variedades de sushi.
+                            </p>
+                            <a href="recipes/sushi.html" class="card-action-link">Ver colección <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="japonesa">
+                        <div class="card-media-wrapper">
+                            <img src="images/sushi.jpg" alt="Shari" class="recipe-image" loading="lazy">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Shari (Arroz para Sushi)</h3>
+                            <div class="card-meta-line">
+                                <span><i class="fa-regular fa-clock"></i> 45 min</span>
+                                <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
+                            </div>
+                            <p class="recipe-card-description">Base de arroz avinagrado: técnica de cocción de gohan y
+                                preparación del aderezo.</p>
+                            <a href="recipes/shari.html" class="card-action-link">Ver receta <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="japonesa">
+                        <div class="card-media-wrapper">
+                            <img src="images/sushi.jpg" alt="Hosomaki" class="recipe-image" loading="lazy">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Hosomaki</h3>
+                            <div class="card-meta-line">
+                                <span><i class="fa-regular fa-clock"></i> 45 min</span>
+                                <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
+                            </div>
+                            <p class="recipe-card-description">Rolls finos con alga nori exterior, rellenos de salmón,
+                                pepino o tamagoyaki.</p>
+                            <a href="recipes/hosomaki.html" class="card-action-link">Ver receta <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="japonesa">
+                        <div class="card-media-wrapper">
+                            <img src="images/uramaki.jpg" alt="Uramaki" class="recipe-image" loading="lazy">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Uramaki</h3>
+                            <div class="card-meta-line">
+                                <span><i class="fa-regular fa-clock"></i> 45 min</span>
+                                <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
+                            </div>
+                            <p class="recipe-card-description">Rolls invertidos: New York Roll y Tuna Roll.</p>
+                            <a href="recipes/uramaki.html" class="card-action-link">Ver receta <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="japonesa">
+                        <div class="card-media-wrapper">
+                            <img src="images/garamaki.jpg" alt="Garamaki" class="recipe-image" loading="lazy">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Garamaki</h3>
+                            <div class="card-meta-line">
+                                <span><i class="fa-regular fa-clock"></i> 45 min</span>
+                                <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
+                            </div>
+                            <p class="recipe-card-description">Roll crocante con lenguado en panko, espárragos, queso
+                                philadelphia y salsa de sésamo.</p>
+                            <a href="recipes/garamaki.html" class="card-action-link">Ver receta <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="japonesa">
+                        <div class="card-media-wrapper">
+                            <img src="images/gunkanMaki.jpg" alt="Gunkan Maki" class="recipe-image" loading="lazy">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Gunkan Maki</h3>
+                            <div class="card-meta-line">
+                                <span><i class="fa-regular fa-clock"></i> 40 min</span>
+                                <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
+                            </div>
+                            <p class="recipe-card-description">Piezas en forma de barco envueltas en nori con caviar
+                                ikura, tartare de salmón o kanikama.</p>
+                            <a href="recipes/gunkanMaki.html" class="card-action-link">Ver receta <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="japonesa">
+                        <div class="card-media-wrapper">
+                            <img src="images/nigiriSashimi.jpg" alt="Niguiri y Sashimi" class="recipe-image"
+                                loading="lazy">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Niguiri y Sashimi de Salmón</h3>
+                            <div class="card-meta-line">
+                                <span><i class="fa-regular fa-clock"></i> 40 min</span>
+                                <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
+                            </div>
+                            <p class="recipe-card-description">Bollitos de arroz moldeados a mano con salmón
+                                y láminas de sashimi.</p>
+                            <a href="recipes/nigiriSashimi.html" class="card-action-link">Ver receta <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="japonesa">
+                        <div class="card-media-wrapper">
+                            <img src="images/sushiCake.jpg" alt="Sushi Cake de Langostinos" class="recipe-image"
+                                loading="lazy">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Sushi Cake de Langostinos</h3>
+                            <div class="card-meta-line">
+                                <span><i class="fa-regular fa-clock"></i> 60 min</span>
+                                <span><i class="fa-solid fa-user-group"></i> 8 porciones</span>
+                            </div>
+                            <p class="recipe-card-description">Torta salada en capas con langostinos al limón, pasta de
+                                salmón y flor de lenguado.</p>
+                            <a href="recipes/sushiCake.html" class="card-action-link">Ver receta <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="cuisine-section" data-cuisine="coreana">
+                <div class="cuisine-header">
+                    <h2><i class="fa-solid fa-bowl-rice"></i> Cocina Coreana (Hansik)</h2>
+                    <span class="cuisine-count">9 recetas</span>
+                </div>
+
+                <div class="recipe-grid">
+                    <article class="recipe-card" data-category="coreana">
+                        <div class="card-media-wrapper">
+                            <img src="images/kimchiykimjang.jpg" alt="Clase de Kimchi y Kimjang" class="recipe-image"
+                                onerror="this.onerror=null; this.src='images/placeholder.svg';" loading="lazy">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Clase de Kimchi y Kimjang</h3>
+                            <div class="card-meta-line">
+                                <span><i class="fa-solid fa-book-open"></i> 4 variedades</span>
+                            </div>
+                            <p class="recipe-card-description">Cultura del Hansik, tradición comunitaria del Kimjang,
+                                beneficios para la salud y las 4 variedades tradicionales.</p>
+                            <a href="recipes/kimjang.html" class="card-action-link">Ver colección <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="coreana">
+                        <div class="card-media-wrapper">
+                            <img src="images/Papita.jpeg" alt="Banchan" class="recipe-image"
+                                onerror="this.onerror=null; this.src='images/placeholder.svg';" loading="lazy">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Banchan (Acompañamientos)</h3>
+                            <div class="card-meta-line">
+                                <span><i class="fa-solid fa-book-open"></i> Acompañamientos</span>
+                            </div>
+                            <p class="recipe-card-description">El corazón de la mesa coreana: variedad de platillos que
+                                acompañan al arroz en cada comida.</p>
+                            <a href="recipes/banchan.html" class="card-action-link">Ver colección <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="coreana">
+                        <div class="card-media-wrapper">
+                            <img src="images/bap.jpg" alt="Bap (Arroz Coreano)" class="recipe-image"
+                                onerror="this.onerror=null; this.src='images/placeholder.svg';" loading="lazy">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Bap (Arroz Coreano)</h3>
+                            <div class="card-meta-line">
+                                <span><i class="fa-regular fa-clock"></i> 25 min</span>
+                                <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
+                            </div>
+                            <p class="recipe-card-description">La base esencial del hansik.</p>
+                            <a href="recipes/bap.html" class="card-action-link">Ver receta <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="coreana">
+                        <div class="card-media-wrapper">
+                            <img src="images/BechuPogui.jpeg" alt="Bechu phogui kimchi" class="recipe-image"
+                                onerror="this.onerror=null; this.src='images/placeholder.svg';" loading="lazy">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Bechu phogui kimchi</h3>
+                            <div class="card-meta-line">
+                                <span><i class="fa-regular fa-clock"></i> ~4h salado</span>
+                                <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
+                            </div>
+                            <p class="recipe-card-description">Kimchi tradicional de col (akusai) con salazón,
+                                engrudo de harina de arroz y pasta aromática de gochugaru.</p>
+                            <a href="recipes/bechuKimchi.html" class="card-action-link">Ver receta <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="coreana">
+                        <div class="card-media-wrapper">
+                            <img src="images/kakdugui.jpg" alt="Kakdugui" class="recipe-image"
+                                onerror="this.onerror=null; this.src='images/placeholder.svg';" loading="lazy">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Kakdugui</h3>
+                            <div class="card-meta-line">
+                                <span><i class="fa-regular fa-clock"></i> 40 min</span>
+                                <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
+                            </div>
+                            <p class="recipe-card-description">Kimchi crocante de cubitos de nabo macerados con sal y
+                                azúcar, teñidos al gochugaru y sazonados con krill.</p>
+                            <a href="recipes/kakdugui.html" class="card-action-link">Ver receta <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="coreana">
+                        <div class="card-media-wrapper">
+                            <img src="images/nabak.jpg" alt="Nabak Kimchi" class="recipe-image"
+                                onerror="this.onerror=null; this.src='images/placeholder.svg';" loading="lazy">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Nabak Kimchi</h3>
+                            <div class="card-meta-line">
+                                <span><i class="fa-regular fa-clock"></i> 20 min</span>
+                                <span><i class="fa-solid fa-user-group"></i> 6 porciones</span>
+                            </div>
+                            <p class="recipe-card-description">Kimchi refrescante de agua con láminas finas de nabo y
+                                baechu en caldo filtrado de gochugaru y jalapeño.</p>
+                            <a href="recipes/nabakKimchi.html" class="card-action-link">Ver receta <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="coreana">
+                        <div class="card-media-wrapper">
+                            <img src="images/oikimchi.jpg" alt="Oi kimchi" class="recipe-image"
+                                onerror="this.onerror=null; this.src='images/placeholder.svg';" loading="lazy">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Oi kimchi</h3>
+                            <div class="card-meta-line">
+                                <span><i class="fa-regular fa-clock"></i> 40 min</span>
+                                <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
+                            </div>
+                            <p class="recipe-card-description">Pepinos cortados en flor y escaldados para conservar
+                                textura supercrocante, rellenos con nira, verdeo y zanahoria.</p>
+                            <a href="recipes/oiKimchi.html" class="card-action-link">Ver receta <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="coreana">
+                        <div class="card-media-wrapper">
+                            <img src="images/oimuchim.jpeg" alt="Oi Muchim" class="recipe-image"
+                                onerror="this.onerror=null; this.src='images/placeholder.svg';" loading="lazy">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Oi Muchim</h3>
+                            <div class="card-meta-line">
+                                <span><i class="fa-regular fa-clock"></i> 20 min</span>
+                                <span><i class="fa-solid fa-user-group"></i> 3 porciones</span>
+                            </div>
+                            <p class="recipe-card-description">Ensalada rápida de pepino crujiente en rodajas finas
+                                condimentadas con gochugaru, salsa de soja, vinagre y sésamo.</p>
+                            <a href="recipes/oiMuchim.html" class="card-action-link">Ver receta <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="recipe-card" data-category="coreana">
+                        <div class="card-media-wrapper">
+                            <img src="images/gamjalorim.jpeg" alt="Gamja Jorim" class="recipe-image"
+                                onerror="this.onerror=null; this.src='images/placeholder.svg';" loading="lazy">
+                        </div>
+                        <div class="recipe-card-content">
+                            <h3>Gamja Jorim</h3>
+                            <div class="card-meta-line">
+                                <span><i class="fa-regular fa-clock"></i> 25 min</span>
+                                <span><i class="fa-solid fa-user-group"></i> 4 porciones</span>
+                            </div>
+                            <p class="recipe-card-description">Cubos de papa braseados en salsa reducida de soja, soju y
+                                jarabe de maíz con morrón, cebolla y aceite de sésamo.</p>
+                            <a href="recipes/gamjaJorim.html" class="card-action-link">Ver receta <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <div id="emptyState" class="empty-state">
+                <i class="fa-solid fa-folder-open"></i>
+                <h3>No se encontraron recetas</h3>
+                <p>Prueba con otros términos de búsqueda.</p>
+                <button id="resetFiltersBtn" class="btn-secondary">Restablecer filtros</button>
             </div>
         </div>
     </main>
@@ -282,7 +368,7 @@
         const searchInput = document.getElementById('searchRecipes');
         const clearBtn = document.getElementById('clearSearch');
         const filterPills = document.querySelectorAll('.filter-pill');
-        const recipeCards = document.querySelectorAll('.recipe-card');
+        const cuisineSections = document.querySelectorAll('.cuisine-section');
         const countDisplay = document.getElementById('recipeCount');
         const emptyState = document.getElementById('emptyState');
         const resetFiltersBtn = document.getElementById('resetFiltersBtn');
@@ -292,30 +378,41 @@
         function applyFilters() {
             const query = searchInput.value.trim().toLowerCase();
             clearBtn.style.display = query.length > 0 ? 'block' : 'none';
-            let visibleCount = 0;
+            let totalVisible = 0;
 
-            recipeCards.forEach(card => {
-                const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
-                const desc = card.querySelector('.recipe-card-description')?.textContent.toLowerCase() || '';
-                const category = card.getAttribute('data-category') || '';
+            cuisineSections.forEach(section => {
+                const cuisine = section.getAttribute('data-cuisine');
+                const matchesCategory = currentCategory === 'all' || currentCategory === cuisine;
+                let sectionVisible = 0;
 
-                const matchesCategory = currentCategory === 'all' || category === currentCategory;
-                const matchesSearch = !query || title.includes(query) || desc.includes(query);
+                const cards = section.querySelectorAll('.recipe-card');
+                cards.forEach(card => {
+                    const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
+                    const desc = card.querySelector('.recipe-card-description')?.textContent.toLowerCase() || '';
+                    const matchesSearch = !query || title.includes(query) || desc.includes(query);
 
-                if (matchesCategory && matchesSearch) {
-                    card.style.display = 'flex';
-                    visibleCount++;
+                    if (matchesCategory && matchesSearch) {
+                        card.style.display = 'flex';
+                        sectionVisible++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                if (matchesCategory && sectionVisible > 0) {
+                    section.style.display = 'block';
+                    totalVisible += sectionVisible;
                 } else {
-                    card.style.display = 'none';
+                    section.style.display = 'none';
                 }
             });
 
-            if (visibleCount === 0) {
+            if (totalVisible === 0) {
                 emptyState.style.display = 'block';
                 countDisplay.textContent = '0 recetas';
             } else {
                 emptyState.style.display = 'none';
-                countDisplay.textContent = `${visibleCount} ${visibleCount === 1 ? 'receta' : 'recetas'}`;
+                countDisplay.textContent = `${totalVisible} ${totalVisible === 1 ? 'receta' : 'recetas'}`;
             }
         }
 

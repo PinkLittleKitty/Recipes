@@ -131,6 +131,38 @@
     color: var(--text-muted);
 }
 
+.cuisine-section {
+    margin-bottom: 44px;
+}
+
+.cuisine-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.cuisine-header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cuisine-header h2 i {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+
+.cuisine-count {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
 .recipe-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));

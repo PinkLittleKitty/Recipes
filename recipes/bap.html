@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bap (Arroz Coreano) - Recetas</title>
+    <meta name="description"
+        content="Receta para cocinar Bap (밥): arroz coreano de grano corto al vapor, cocción en arrocera u olla tradicional.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles/theme.css">
+    <link rel="stylesheet" href="../styles/recipe.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <article class="recipe-container">
+            <nav class="recipe-nav" aria-label="Navegación de receta">
+                <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Volver a Recetas</a>
+                <button id="printRecipeBtn" class="btn-ghost" title="Imprimir"><i class="fa-solid fa-print"></i>
+                    Imprimir</button>
+            </nav>
+
+            <header class="recipe-header">
+                <h1>Bap (Arroz Coreano)</h1>
+                <p class="subtitle">밥 · La base esencial del hansik (comida coreana), presente en prácticamente todas
+                    las comidas</p>
+
+                <div class="recipe-meta-row">
+                    <span><i class="fa-regular fa-clock"></i> ~25 min</span>
+                    <span><i class="fa-solid fa-user-group"></i> <span id="servings">4</span> porciones</span>
+                </div>
+            </header>
+
+            <div class="recipe-hero-image-wrap">
+                <img src="../images/bap.jpg" alt="Bap (Arroz Coreano)" class="recipe-image"
+                    onerror="this.onerror=null; this.src='../images/placeholder.svg';" loading="lazy">
+            </div>
+
+            <div class="recipe-controls-bar">
+                <div class="scaling-group">
+                    <label for="servingScale">Porciones:</label>
+                    <select id="servingScale" class="scale-select" aria-label="Escala de porciones">
+                        <option value="0.5">½×</option>
+                        <option value="1" selected>1×</option>
+                        <option value="2">2×</option>
+                        <option value="3">3×</option>
+                    </select>
+                </div>
+                <div class="timer-inline" data-seconds="480">
+                    <span class="timer-display">08:00</span>
+                    <button class="timer-btn timer-start-btn"><i class="fa-solid fa-play"></i> Iniciar</button>
+                    <button class="timer-btn timer-reset-btn" title="Reiniciar"><i
+                            class="fa-solid fa-rotate-left"></i></button>
+                </div>
+            </div>
+
+            <section class="recipe-section ingredients-section" aria-labelledby="ingredientsHeading">
+                <div class="section-header">
+                    <h2 id="ingredientsHeading" class="section-title">Ingredientes</h2>
+                </div>
+                <ul class="ingredients-list">
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Arroz Fortuna o Doble Carolina (grano corto)</span>
+                        </label>
+                        <span class="amount">350g</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Agua potable (ajustable según cosecha)</span>
+                        </label>
+                        <span class="amount">375cc</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="recipe-section instructions-section" aria-labelledby="instructionsHeading">
+                <div class="section-header">
+                    <h2 id="instructionsHeading" class="section-title">Instrucciones</h2>
+                </div>
+
+                <details open>
+                    <summary>
+                        <h3>1. Lavado del Arroz</h3>
+                        <i class="fa-solid fa-chevron-right summary-chevron"></i>
+                    </summary>
+                    <div class="details-content">
+                        <ol class="instructions-list">
+                            <li>Colocar el arroz en un bowl y enjuagar 7 veces bajo agua fría, frotando suavemente con
+                                las manos en movimientos circulares.</li>
+                            <li>Cambiar el agua entre cada lavado hasta que salga prácticamente transparente. Este
+                                proceso elimina residuos, blanqueadores y el exceso de almidón superficial para lograr
+                                granos sueltos pero húmedos.</li>
+                            <li>Escurrir muy bien en un colador.</li>
+                        </ol>
+                    </div>
+                </details>
+
+                <details open>
+                    <summary>
+                        <h3>2. Cocción en Olla</h3>
+                        <i class="fa-solid fa-chevron-right summary-chevron"></i>
+                    </summary>
+                    <div class="details-content">
+                        <ol class="instructions-list">
+                            <li>Colocar el arroz lavado y escurrido en la cacerola junto con el agua medida. Tapar la
+                                olla.</li>
+                            <li>Llevar a fuego fuerte hasta que rompa en hervor vigoroso.</li>
+                            <li>Apenas rompa el hervor, bajar inmediatamente el fuego al mínimo y cocinar tapado durante
+                                <strong>8 minutos</strong> (¡sin destapar la olla!).
+                            </li>
+                            <li>Apagar el fuego y dejar reposar durante <strong>10 minutos más</strong> de cocción
+                                pasiva con el vapor residual (fundamental: no destapar).</li>
+                            <li>Destapar y airear suavemente el arroz con una espátula de madera o silicona desde los
+                                bordes hacia el centro.</li>
+                        </ol>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>
+                        <h3>2.1. Cocción en Arrocera Eléctrica</h3>
+                        <i class="fa-solid fa-chevron-right summary-chevron"></i>
+                    </summary>
+                    <div class="details-content">
+                        <ol class="instructions-list">
+                            <li>Colocar el arroz lavado y escurrido en la cubeta de la arrocera.</li>
+                            <li>Agregar la misma cantidad de agua que de arroz (proporción 1:1, aprox. 350 cc).</li>
+                            <li>Cocinar según el ciclo normal del aparato (sin agregar sal ni aceite).</li>
+                            <li>Una vez finalizado el ciclo, dejar reposar 5 minutos en modo mantener caliente y
+                                revolver
+                                suavemente antes de servir.</li>
+                        </ol>
+                    </div>
+                </details>
+            </section>
+
+            <aside class="recipe-tips">
+                <h3><i class="fa-regular fa-lightbulb"></i> Secretos del Arroz Coreano</h3>
+                <p><strong>Ajuste de agua según cosecha:</strong> Si el arroz es de cosecha nueva (ej. marzo/otoño),
+                    retiene más humedad natural y requiere menos agua (aprox. 350 cc). Si es arroz viejo de meses
+                    posteriores, absorbe más líquido (hasta 400 - 420 cc).</p>
+                <p><strong>Textura ideal:</strong> Los granos deben quedar tiernos, brillantes, ligeramente pegajosos
+                    entre sí pero con granos individuales bien definidos, nunca apelmazados.</p>
+                <p><strong>Conservación:</strong> Guardar en recipiente hermético en la heladera hasta 3 días, o
+                    fraccionar en porciones individuales envueltas en papel film y congelar.</p>
+                <p><strong>Acompañamientos:</strong> Acompañar con una selección de <a href="banchan.html"
+                        style="text-decoration: underline; color: var(--text-primary);">Banchan</a> tradicionales como
+                    Kimchi, Oi Muchim o Gamja Jorim.</p>
+            </aside>
+        </article>
+    </div>
+
+    <script src="../scripts/recipe.js"></script>
+</body>
+
+</html>
