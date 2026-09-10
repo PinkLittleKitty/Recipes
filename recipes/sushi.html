@@ -1,88 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sushi - Recetas</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Variedades de Sushi</title>
+    <meta name="description" content="Variedades: Hosomaki, Garamaki, Uramaki, Gunkan, Sushi Cake y Nigiri.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles/theme.css">
     <link rel="stylesheet" href="../styles/recipe.css">
 </head>
+
 <body>
-    <div class="recipe-container">
-        <a href="../index.html" class="back-button">← Volver a Recetas</a>
-        <div class="recipe-header">
-            <h1>Tipos de Sushi</h1>
-            <p class="subtitle">Explora las diferentes variedades de sushi tradicional japonés</p>
-        </div>
-        
-        <div class="sushi-variants">
-            <div class="sushi-card">
-                <div class="card-image">
-                    <img src="../images/sushi.jpg" alt="">
-                </div>
-                <div class="card-content">
-                    <h2>Hosomaki</h2>
-                    <p>Rolls pequeños con alga por fuera</p>
-                    <a href="hosomaki.html" class="sushi-link">Ver receta <span class="arrow">→</span></a>
-                </div>
-            </div>
+    <div class="page-wrapper">
+        <div class="recipe-container">
+            <nav class="recipe-nav" aria-label="Navegación">
+                <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Volver a Recetas</a>
+                <button id="printRecipeBtn" class="btn-ghost" title="Imprimir"><i class="fa-solid fa-print"></i>
+                    Imprimir</button>
+            </nav>
 
-            <div class="sushi-card">
-                <div class="card-image">
-                    <img src="../images/garamaki.jpg" alt="">
-                </div>
-                <div class="card-content">
-                    <h2>Garamaki</h2>
-                    <p>Roll invertido, cubierto en nori u omellete.</p>
-                    <a href="garamaki.html" class="sushi-link">Ver receta <span class="arrow">→</span></a>
-                </div>
-            </div>
+            <header class="recipe-header">
+                <h1>Tipos de Sushi</h1>
+                <p class="subtitle">Variedades, técnicas de armado y estilos</p>
+            </header>
 
-            <div class="sushi-card">
-                <div class="card-image">
-                    <img src="../images/uramaki.jpg" alt="">
-                </div>
-                <div class="card-content">
-                    <h2>Uramaki</h2>
-                    <p>New York Roll, Tuna Roll</p>
-                    <a href="uramaki.html" class="sushi-link">Ver receta <span class="arrow">→</span></a>
-                </div>
-            </div>
+            <main class="sushi-variants">
+                <article class="sushi-card">
+                    <div class="card-image">
+                        <img src="../images/sushi.jpg" alt="Hosomaki" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h2>Hosomaki</h2>
+                        <p>Rolls finos de un solo ingrediente envueltos en alga nori por fuera.</p>
+                        <a href="hosomaki.html" class="sushi-link">Ver receta <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
 
-            <div class="sushi-card">
-                <div class="card-image">
-                    <img src="../images/gunkanMaki.jpg" alt="">
-                </div>
-                <div class="card-content">
-                    <h2>Gunkan Maki</h2>
-                    <p>Sushi en forma de cañoncito envuelto en alga nori.</p>
-                    <a href="gunkanMaki.html" class="sushi-link">Ver receta <span class="arrow">→</span></a>
-                </div>
-            </div>
+                <article class="sushi-card">
+                    <div class="card-image">
+                        <img src="../images/garamaki.jpg" alt="Garamaki" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h2>Garamaki</h2>
+                        <p>Roll con crocante de lenguado al panko, espárragos y salsa de sésamo tostado.</p>
+                        <a href="garamaki.html" class="sushi-link">Ver receta <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
 
-            <div class="sushi-card">
-                <div class="card-image">
-                    <img src="../images/sushiCake.jpg" alt="">
-                </div>
-                <div class="card-content">
-                    <h2>Sushi Cake de Langostinos</h2>
-                    <p>Torta sushi de langostinos, con tartare de salmón.</p>
-                    <a href="sushiCake.html" class="sushi-link">Ver receta <span class="arrow">→</span></a>
-                </div>
-            </div>
+                <article class="sushi-card">
+                    <div class="card-image">
+                        <img src="../images/uramaki.jpg" alt="Uramaki" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h2>Uramaki</h2>
+                        <p>Rolls invertidos: New York Roll y Tuna Roll.</p>
+                        <a href="uramaki.html" class="sushi-link">Ver receta <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
 
-            <div class="sushi-card">
-                <div class="card-image">
-                    <img src="../images/nigiriSashimi.jpg" alt="">
-                </div>
-                <div class="card-content">
-                    <h2>Niguiri de Salmón o Langostino</h2>
-                    <p>Niguiri y Sashimi de Salmón o Langostinos.</p>
-                    <a href="nigiriSashimi.html" class="sushi-link">Ver receta <span class="arrow">→</span></a>
-                </div>
-            </div>
+                <article class="sushi-card">
+                    <div class="card-image">
+                        <img src="../images/gunkanMaki.jpg" alt="Gunkan Maki" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h2>Gunkan Maki</h2>
+                        <p>Bocados en forma de barco envueltos en nori con caviar ikura, tartare o kanikama.</p>
+                        <a href="gunkanMaki.html" class="sushi-link">Ver receta <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="sushi-card">
+                    <div class="card-image">
+                        <img src="../images/sushiCake.jpg" alt="Sushi Cake" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h2>Sushi Cake de Langostinos</h2>
+                        <p>Torta sushi en capas con langostinos al limón y flor de lenguado con caviar.</p>
+                        <a href="sushiCake.html" class="sushi-link">Ver receta <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="sushi-card">
+                    <div class="card-image">
+                        <img src="../images/nigiriSashimi.jpg" alt="Nigiri y Sashimi" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h2>Niguiri y Sashimi de Salmón</h2>
+                        <p>Bollitos de arroz moldeados a mano con salmón y láminas de sashimi.</p>
+                        <a href="nigiriSashimi.html" class="sushi-link">Ver receta <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </main>
         </div>
     </div>
+    <script src="../scripts/recipe.js"></script>
 </body>
+
 </html>
-<script src="../scripts/recipe.js"></script>

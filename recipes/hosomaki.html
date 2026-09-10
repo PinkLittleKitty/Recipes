@@ -1,89 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hosomaki - Recetas</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <meta name="description" content="Receta de Hosomaki: rolls finos de salmón, pepino o tamagoyaki.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles/theme.css">
     <link rel="stylesheet" href="../styles/recipe.css">
 </head>
-<body>
-    <div class="recipe-container">
-        <a href="sushi.html" class="back-button">← Volver a Sushi</a>
-        <div class="recipe-header">
-            <h1>Hosomaki</h1>
-            <div class="scaling-controls">
-                <label for="servingScale">Ajustar cantidades:</label>
-                <select id="servingScale">
-                    <option value="0.5">½×</option>
-                    <option value="1" selected>1×</option>
-                    <option value="2">2×</option>
-                    <option value="3">3×</option>
-                </select>
-            </div>
-            <div class="recipe-meta">
-                <span>⏱️ Tiempo: 45min</span>
-                <span>👥 Porciones: <span id="servings">4</span></span>
-            </div>
-        </div>
-        <section class="ingredients-section">
-            <h2>Ingredientes</h2>
-            <ul class="ingredients-list">
-                <li>
-                    <span class="ingredient"><a href="shari.html">Shari</a></span>
-                    <span class="amount">2kg</span>
-                </li>
-                <li>
-                    <span class="ingredient">Algas Nori</span>
-                    <span class="amount">6un</span>
-                </li>
-                <li>
-                    <span class="ingredient">Pepino Japonés</span>
-                    <span class="amount">2un</span>
-                </li>
-                <li>
-                    <span class="ingredient">Salmón fresco</span>
-                    <span class="amount">250g</span>
-                </li>
-                <li>
-                    <span class="ingredient">Wasabi</span>
-                    <span class="amount">5g</span>
-                </li>
-                <li>
-                    <span class="ingredient">Salsa de soja</span>
-                    <span class="amount">30cm³</span>
-                </li>
-            </ul>
-        </section>
 
-        <section class="instructions-section">
-            <h2>Rellenos</h2>
-            <ol class="instructions-list">
-                <li>Salmón</li>
-                <li>Pepino</li>
+<body>
+    <div class="page-wrapper">
+        <article class="recipe-container">
+            <nav class="recipe-nav" aria-label="Navegación de receta">
+                <a href="sushi.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Volver a Sushi</a>
+                <button id="printRecipeBtn" class="btn-ghost" title="Imprimir"><i class="fa-solid fa-print"></i>
+                    Imprimir</button>
+            </nav>
+
+            <header class="recipe-header">
+                <h1>Hosomaki</h1>
+                <p class="subtitle">Rolls finos envueltos en alga nori con centro de salmón, pepino o tamagoyaki
+                </p>
+
+                <div class="recipe-meta-row">
+                    <span><i class="fa-regular fa-clock"></i> 45 min</span>
+                    <span><i class="fa-solid fa-user-group"></i> <span id="servings">4</span> porciones</span>
+                </div>
+            </header>
+
+            <div class="recipe-hero-image-wrap">
+                <img src="../images/sushi.jpg" alt="Hosomaki" class="recipe-image" loading="lazy">
+            </div>
+
+            <div class="recipe-controls-bar">
+                <div class="scaling-group">
+                    <label for="servingScale">Porciones:</label>
+                    <select id="servingScale" class="scale-select" aria-label="Escala de porciones">
+                        <option value="0.5">½×</option>
+                        <option value="1" selected>1×</option>
+                        <option value="2">2×</option>
+                        <option value="3">3×</option>
+                    </select>
+                </div>
+                <div class="timer-inline" data-seconds="300">
+                    <span class="timer-display">05:00</span>
+                    <button class="timer-btn timer-start-btn"><i class="fa-solid fa-play"></i> Iniciar</button>
+                    <button class="timer-btn timer-reset-btn" title="Reiniciar"><i
+                            class="fa-solid fa-rotate-left"></i></button>
+                </div>
+            </div>
+
+            <section class="recipe-section ingredients-section" aria-labelledby="ingredientsHeading">
+                <div class="section-header">
+                    <h2 id="ingredientsHeading" class="section-title">Ingredientes</h2>
+                </div>
+                <ul class="ingredients-list">
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient"><a href="shari.html">Shari</a></span>
+                        </label>
+                        <span class="amount">2kg</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Algas Nori</span>
+                        </label>
+                        <span class="amount">6un</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Pepino Japonés</span>
+                        </label>
+                        <span class="amount">2un</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Salmón</span>
+                        </label>
+                        <span class="amount">250g</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Wasabi</span>
+                        </label>
+                        <span class="amount">5g</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Salsa de soja</span>
+                        </label>
+                        <span class="amount">30cm³</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="recipe-section instructions-section" aria-labelledby="instructionsHeading">
+                <div class="section-header">
+                    <h2 id="instructionsHeading" class="section-title">Rellenos</h2>
+                </div>
+                <ol class="instructions-list">
+                    <li>Salmón</li>
+                    <li>Pepino</li>
+                </ol>
                 <details closed>
-                    <summary><h3>Tamagoyaki</h3></summary>
-                    <ol class="instructions-list">
-                        <li>Batir 3 huevos con 1 cda. de azúcar, 3 cdas de sake, y una pizca de sal.</li>
-                        <li>Verter sobre la sartén caliente previamente aceitada.</li>
-                        <li>Cocinar a fuego mínimo hasta que cuaje..</li>
-                        <li>Dar vuelta el omellete y cocinar 1 minuto.</li>
-                        <li>Emplatar y dejar enfriar.</li>
-                    </ol>
+                    <summary>
+                        <h3>Tamagoyaki</h3>
+                        <i class="fa-solid fa-chevron-right summary-chevron"></i>
+                    </summary>
+                    <div class="details-content">
+                        <ol class="instructions-list">
+                            <li>Batir 3 huevos con 1 cda. de azúcar, 3 cdas de sake, y una pizca de sal.</li>
+                            <li>Verter sobre la sartén caliente previamente aceitada.</li>
+                            <li>Cocinar a fuego mínimo hasta que cuaje.</li>
+                            <li>Dar vuelta el omellete y cocinar 1 minuto.</li>
+                            <li>Emplatar y dejar enfriar.</li>
+                        </ol>
+                    </div>
                 </details>
-            </ol>
-            <h2>Instrucciones</h2>
-            <ol class="instructions-list">
-                <li>Preparar el shari.</li>
-                <li>Cortar el relleno en tiras. (Tamagoyaki, Pepino, o Salmón.)</li>
-                <li>Cortar las algas por la mitad.</li>
-                <li>Colocar una de las mitades sobre la esterilla.</li>
-                <li>Encima del nori poner el shari, dejando libre en el margen superior unos 2cm.</li>
-                <li>Colocar wasabi en el centro del shari (Excepto en el de tamagoyaki).</li>
-                <li>Arriba del wasabi poner el relleno elegido.</li>
-            </ol>
-        </section>
+
+                <div class="section-header" style="margin-top: 24px;">
+                    <h2 class="section-title">Instrucciones</h2>
+                </div>
+                <ol class="instructions-list">
+                    <li>Preparar el shari.</li>
+                    <li>Cortar el relleno en tiras. (Tamagoyaki, Pepino, o Salmón.)</li>
+                    <li>Cortar las algas por la mitad.</li>
+                    <li>Colocar una de las mitades sobre la esterilla.</li>
+                    <li>Encima del nori poner el shari, dejando libre en el margen superior unos 2cm.</li>
+                    <li>Colocar wasabi en el centro del shari (Excepto en el de tamagoyaki).</li>
+                    <li>Arriba del wasabi poner el relleno elegido.</li>
+                </ol>
+            </section>
+        </article>
     </div>
+
+    <script src="../scripts/recipe.js"></script>
 </body>
+
 </html>
-<script src="../scripts/recipe.js"></script>

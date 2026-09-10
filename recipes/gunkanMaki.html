@@ -1,71 +1,196 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gunkan Maki Sushi - Recetas</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Gunkan Maki - Recetas</title>
+    <meta name="description"
+        content="Receta de Gunkan Maki: piezas envueltas en alga nori con caviar ikura, tartare de salmón o kanikama.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles/theme.css">
     <link rel="stylesheet" href="../styles/recipe.css">
 </head>
+
 <body>
-    <div class="recipe-container">
-        <a href="sushi.html" class="back-button">← Volver a Sushi</a>
-        <div class="recipe-header">
-            <h1>Gunkan Maki</h1>
-            <div class="scaling-controls">
-                <label for="servingScale">Ajustar cantidades:</label>
-                <select id="servingScale">
-                    <option value="0.5">½×</option>
-                    <option value="1" selected>1×</option>
-                    <option value="2">2×</option>
-                    <option value="3">3×</option>
-                </select>
-            </div>
-            <div class="recipe-meta">
-                <span>⏱️ Tiempo: 40min</span>
-                <span>👥 Porciones: <span id="servings">4</span></span>
-            </div>
-        </div>
+    <div class="page-wrapper">
+        <article class="recipe-container">
+            <nav class="recipe-nav" aria-label="Navegación de receta">
+                <a href="sushi.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Volver a Sushi</a>
+                <button id="printRecipeBtn" class="btn-ghost" title="Imprimir"><i class="fa-solid fa-print"></i>
+                    Imprimir</button>
+            </nav>
 
-        <div class="recipe-content">
-            <div class="ingredients-section">
-                <h2>Ingredientes</h2>
+            <header class="recipe-header">
+                <h1>Gunkan Maki</h1>
+                <p class="subtitle">Piezas envueltas en alga nori con caviar ikura, tartare de salmón o kanikama</p>
+
+                <div class="recipe-meta-row">
+                    <span><i class="fa-regular fa-clock"></i> 40 min</span>
+                    <span><i class="fa-solid fa-user-group"></i> <span id="servings">4</span> porciones</span>
+                </div>
+            </header>
+
+            <div class="recipe-hero-image-wrap">
+                <img src="../images/gunkanMaki.jpg" alt="Gunkan Maki" class="recipe-image" loading="lazy">
+            </div>
+
+            <div class="recipe-controls-bar">
+                <div class="scaling-group">
+                    <label for="servingScale">Porciones:</label>
+                    <select id="servingScale" class="scale-select" aria-label="Escala de porciones">
+                        <option value="0.5">½×</option>
+                        <option value="1" selected>1×</option>
+                        <option value="2">2×</option>
+                        <option value="3">3×</option>
+                    </select>
+                </div>
+                <div class="timer-inline" data-seconds="900">
+                    <span class="timer-display">15:00</span>
+                    <button class="timer-btn timer-start-btn"><i class="fa-solid fa-play"></i> Iniciar</button>
+                    <button class="timer-btn timer-reset-btn" title="Reiniciar"><i
+                            class="fa-solid fa-rotate-left"></i></button>
+                </div>
+            </div>
+
+            <section class="recipe-section ingredients-section" aria-labelledby="ingredientsHeading">
+                <div class="section-header">
+                    <h2 id="ingredientsHeading" class="section-title">Ingredientes</h2>
+                </div>
                 <ul class="ingredients-list">
-                    <li><a href="shari.html">Shari</a> <span class="amount">500grs</span></li>
-                    <li>Salmón fresco <span class="amount">350grs</span></li>
-                    <li>Algas Nori <span class="amount">6un</span></li>
-                    <li>Ikura (Caviar de salmón rosado) <span class="amount">10grs</span></li>
-                    <li>Sake <span class="amount">10cm3</span></li>
-                    <li>Bastoncitos de Kanikama <span class="amount">2un</span></li>
-                    <li>Palta <span class="amount">1/2un</span></li>
-                    <li>Planta pequeña de cebolla de verdeo <span class="amount">1un</span></li>
-                    <li>Pepino Japonés <span class="amount">3un</span></li>
-                    <li>Wasabi <span class="amount">10grs</span></li>
-                    <li>Mayonesa <span class="amount">10grs</span></li>
-                    <li>Huevos de codorniz <span class="amount">6un</span></li>
-                    <li>Salsa de soja <span class="amount">30cm3</span></li>
-                    <li>Tabasco a gusto</li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient"><a href="shari.html">Shari</a></span>
+                        </label>
+                        <span class="amount">500grs</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Salmón</span>
+                        </label>
+                        <span class="amount">350grs</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Algas Nori</span>
+                        </label>
+                        <span class="amount">6un</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Ikura (Caviar de salmón rosado)</span>
+                        </label>
+                        <span class="amount">10grs</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Sake</span>
+                        </label>
+                        <span class="amount">10cm3</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Bastoncitos de Kanikama</span>
+                        </label>
+                        <span class="amount">2un</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Palta</span>
+                        </label>
+                        <span class="amount">1/2un</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Planta pequeña de cebolla de verdeo</span>
+                        </label>
+                        <span class="amount">1un</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Pepino Japonés</span>
+                        </label>
+                        <span class="amount">3un</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Wasabi</span>
+                        </label>
+                        <span class="amount">10grs</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Mayonesa</span>
+                        </label>
+                        <span class="amount">10grs</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Huevos de codorniz</span>
+                        </label>
+                        <span class="amount">6un</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Salsa de soja</span>
+                        </label>
+                        <span class="amount">30cm3</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Tabasco a gusto</span>
+                        </label>
+                        <span class="amount">a gusto</span>
+                    </li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="instructions-section">
-                <h2>Instrucciones</h2>
+            <section class="recipe-section instructions-section" aria-labelledby="instructionsHeading">
+                <div class="section-header">
+                    <h2 id="instructionsHeading" class="section-title">Instrucciones</h2>
+                </div>
+
                 <ol class="instructions-list">
-                   <li>Picamos en brunoise el kanikama, el pepino, y la palta, mezclar todo con un poco de mayonesa y reservar en la heladera.</li>
-                   <li>Tartare de salmón, cortar en brunoise el salmón, y picar bien fino la cebolla de verdeo, mezclar todo junto con queso crema, mayonesa, o una hueva de codorniz, y reservar en la heladera.</li>
-                   <li>En un pequeño bowl colocar las huevas de salmón, y macerar durante 15 minutos con sake, luego retirar el sake.</li>
-                   <li>Tomar el pepino japonés, primero cortar a la mitad a lo largo, y luego cortar pequeños abanicos para decorar.</li>
-                   <li>Preparar bollitos con el shari de 3 a 3.5 cm de largo por 1,5 de alto aproximadamente, en forma de pequeño corcho.</li>
-                   <li>Para el armado, envolver el bollito de shari en la tira de alga, colocar en un extremo el abanico de pepino, luego rellenar con alguno de los rellenos, ikura, kanikama, o salmón.</li>
-                   <li>Una vez rellenos, colocar el wasabi a gusto, y degustar en menos de 30 segundos.</li>
+                    <li>Picamos en brunoise el kanikama, el pepino, y la palta, mezclar todo con un poco de mayonesa y
+                        reservar en la heladera.</li>
+                    <li>Tartare de salmón, cortar en brunoise el salmón, y picar bien fino la cebolla de verdeo, mezclar
+                        todo junto con queso crema, mayonesa, o una hueva de codorniz, y reservar en la heladera.</li>
+                    <li>En un pequeño bowl colocar las huevas de salmón, y macerar durante 15 minutos con sake, luego
+                        retirar el sake.</li>
+                    <li>Tomar el pepino japonés, primero cortar a la mitad a lo largo, y luego cortar pequeños abanicos
+                        para decorar.</li>
+                    <li>Preparar bollitos con el shari de 3 a 3.5 cm de largo por 1,5 de alto aproximadamente, en forma
+                        de pequeño corcho.</li>
+                    <li>Para el armado, envolver el bollito de shari en la tira de alga, colocar en un extremo el
+                        abanico de pepino, luego rellenar con alguno de los rellenos, ikura, kanikama, o salmón.</li>
+                    <li>Una vez rellenos, colocar el wasabi a gusto, y degustar en menos de 30 segundos.</li>
                 </ol>
-            </div>
-        </div>
-        <div class="recipe-tips">
-            <h3>💡 Observación</h3>
-            <p>El Gunkan Maki significa "barco de guerra" en japonés, debido a su forma característica que se asemeja a un pequeño bote. Es importante que el nori esté bien ajustado al arroz para mantener el relleno en su lugar.</p>
-        </div>
+            </section>
+
+            <aside class="recipe-tips">
+                <h3><i class="fa-regular fa-lightbulb"></i> Observación</h3>
+                <p>El Gunkan Maki significa "barco de guerra" en japonés, debido a su forma característica que se
+                    asemeja a un pequeño bote. Es importante que el nori esté bien ajustado al arroz para mantener el
+                    relleno en su lugar.</p>
+            </aside>
+        </article>
     </div>
+
+    <script src="../scripts/recipe.js"></script>
 </body>
+
 </html>
-<script src="../scripts/recipe.js"></script>

@@ -1,83 +1,209 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uramaki Sushi - Recetas</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Uramaki - Recetas</title>
+    <meta name="description"
+        content="Receta de Uramaki (rolls invertidos): New York Roll con salmón y palta, y Tuna Roll.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles/theme.css">
     <link rel="stylesheet" href="../styles/recipe.css">
 </head>
+
 <body>
-    <div class="recipe-container">
-        <a href="sushi.html" class="back-button">← Volver a Sushi</a>
-        <div class="recipe-header">
-            <h1>Uramaki</h1>
-            <div class="scaling-controls">
-                <label for="servingScale">Ajustar cantidades:</label>
-                <select id="servingScale">
-                    <option value="0.5">½×</option>
-                    <option value="1" selected>1×</option>
-                    <option value="2">2×</option>
-                    <option value="3">3×</option>
-                </select>
-            </div>
-            <div class="recipe-meta">
-                <span>⏱️ Tiempo: 45min</span>
-                <span>👥 Porciones: <span id="servings">4</span></span>
-            </div>
-        </div>
+    <div class="page-wrapper">
+        <article class="recipe-container">
+            <nav class="recipe-nav" aria-label="Navegación de receta">
+                <a href="sushi.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Volver a Sushi</a>
+                <button id="printRecipeBtn" class="btn-ghost" title="Imprimir"><i class="fa-solid fa-print"></i>
+                    Imprimir</button>
+            </nav>
 
-        <div class="recipe-content">
-            <div class="ingredients-section">
-                <h2>Ingredientes</h2>
+            <header class="recipe-header">
+                <h1>Uramaki</h1>
+                <p class="subtitle">Rolls invertidos: New York Roll y Tuna Roll</p>
+
+                <div class="recipe-meta-row">
+                    <span><i class="fa-regular fa-clock"></i> 45 min</span>
+                    <span><i class="fa-solid fa-user-group"></i> <span id="servings">4</span> porciones</span>
+                </div>
+            </header>
+
+            <div class="recipe-hero-image-wrap">
+                <img src="../images/uramaki.jpg" alt="Uramaki Sushi" class="recipe-image" loading="lazy">
+            </div>
+
+            <div class="recipe-controls-bar">
+                <div class="scaling-group">
+                    <label for="servingScale">Porciones:</label>
+                    <select id="servingScale" class="scale-select" aria-label="Escala de porciones">
+                        <option value="0.5">½×</option>
+                        <option value="1" selected>1×</option>
+                        <option value="2">2×</option>
+                        <option value="3">3×</option>
+                    </select>
+                </div>
+                <div class="timer-inline" data-seconds="120">
+                    <span class="timer-display">02:00</span>
+                    <button class="timer-btn timer-start-btn"><i class="fa-solid fa-play"></i> Iniciar</button>
+                    <button class="timer-btn timer-reset-btn" title="Reiniciar"><i
+                            class="fa-solid fa-rotate-left"></i></button>
+                </div>
+            </div>
+
+            <section class="recipe-section ingredients-section" aria-labelledby="ingredientsHeading">
+                <div class="section-header">
+                    <h2 id="ingredientsHeading" class="section-title">Ingredientes</h2>
+                </div>
                 <ul class="ingredients-list">
-                    <li><a href="shari.html">Shari</a> <span class="amount">2kg</span></li>
-                    <li>Semillas de sésamo tostadas <span class="amount">40grs</span></li>
-                    <li>Hojas de algas nori <span class="amount">5un</span></li>
-                    <li>Salmón fresco <span class="amount">400grs</span></li>
-                    <li>Atún entero, en lata <span class="amount">350grs</span></li>
-                    <li>Lechuga mantecosa fresca <span class="amount">150grs</span></li>
-                    <li>Palta Hass <span class="amount">1 un</span></li>
-                    <li>Pepino Japonés <span class="amount">2 un</span></li>
-                    <li>Planta de cebolla de verdeo <span class="amount">2 un</span></li>
-                    <li>Salsa de soja estilo japonés <span class="amount">30 cm3</span></li>
-                    <li>Wasabi <span class="amount">20 grs</span></li>
-                    <li>Perejil Crespo</li>
-                    <li>Salsa tabasco a gusto</li>
-                    <li>Sal y pimienta negra a gusto</li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient"><a href="shari.html">Shari</a></span>
+                        </label>
+                        <span class="amount">2kg</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Semillas de sésamo tostadas (blancas y negras)</span>
+                        </label>
+                        <span class="amount">40grs</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Hojas de algas nori</span>
+                        </label>
+                        <span class="amount">5un</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Salmón</span>
+                        </label>
+                        <span class="amount">400grs</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Atún al natural escurrido</span>
+                        </label>
+                        <span class="amount">350grs</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Lechuga mantecosa fresca</span>
+                        </label>
+                        <span class="amount">150grs</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Palta Hass firme</span>
+                        </label>
+                        <span class="amount">1un</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Pepino Japonés</span>
+                        </label>
+                        <span class="amount">2un</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Cebolla de verdeo picada fina</span>
+                        </label>
+                        <span class="amount">2un</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Salsa de soja japonesa</span>
+                        </label>
+                        <span class="amount">30cm³</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Wasabi</span>
+                        </label>
+                        <span class="amount">20grs</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Salsa tabasco a gusto</span>
+                        </label>
+                        <span class="amount">a gusto</span>
+                    </li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="instructions-section">
-                <h2>Instrucciones</h2>
+            <section class="recipe-section instructions-section" aria-labelledby="instructionsHeading">
+                <div class="section-header">
+                    <h2 id="instructionsHeading" class="section-title">Instrucciones</h2>
+                </div>
+
                 <ol class="instructions-list">
-                    <li>Forrar la esterilla con papel film</li>
-                    <details closed>
-                        <summary><h3>Tuna Roll</h3></summary>
-                        <ol class="instructions-list">
-                            <li>Colocar en un bowl, el atún desmenuzado sin agua ni aceite, un poco de mayonesa, sal, pimienta a gusto, cebolla de verdeo picado bien fino, mezclar, y reservar.</li>
-                            <li>Colocar un alga nori sobre la esterilla y cubrir todo el alga con 6mm de shari.</li>
-                            <li>Espolvorear a gusto con el sésamo y dar vuelta el nori.</li>
-                            <li>Colocar en el centro del nori, primero la lechuga mantecosa, luego el atún en forma cilíndrica de 2cm de diámetro, cerrar, y cortar en 8 piezas.</li>
-                        </ol>
-                    </details>
-                    <details closed>
-                        <summary><h3>New York Roll</h3></summary>
-                        <ol class="instructions-list">
-                            <li>Colocar un alga nori sobre la esterilla y cubrir toda el alga con 6mm de shari.</li>
-                            <li>Espolvorear a gusto con el sésamo y dar vuelta el nori.</li>
-                            <li>Colocar en el centro del nori, primero la palta en gajos, una cinta de pepino de 1cm x 5 mm, un bastón de salmón fresco de 1,5 x 1,5, cerrar, y cortar en 8 piezas.</li>
-                            <li>Acompañar con salsa de soja, perejil crespo, wasabi, y servir.</li>
-                        </ol>
-                    </details>
+                    <li>Forrar la esterilla de bambú con film plástico transparente para evitar que el arroz exterior se
+                        adhiera.</li>
                 </ol>
-            </div>
-        </div>
-        <div class="recipe-tips">
-            <h3>💡 Observación</h3>
-            <p>El uramaki es un roll invertido donde el arroz queda por fuera y el alga nori por dentro.</p>
-        </div>
+
+                <details open>
+                    <summary>
+                        <h3>New York Roll</h3>
+                        <i class="fa-solid fa-chevron-right summary-chevron"></i>
+                    </summary>
+                    <div class="details-content">
+                        <ol class="instructions-list">
+                            <li>Colocar media alga nori sobre la esterilla forrada y cubrir toda la superficie con 6 mm
+                                de shari uniforme.</li>
+                            <li>Espolvorear generosamente con sésamo tostado y voltear el alga (el arroz queda apoyado
+                                en el film).</li>
+                            <li>En el centro del nori, acomodar palta en gajos, una tira de pepino de 1 cm x 5 mm y un
+                                bastón de salmón de 1.5 x 1.5 cm.</li>
+                            <li>Enrollar con el makisu presionando suavemente para dar forma cilíndrica pareja.</li>
+                            <li>Cortar en 8 piezas con cuchillo humedecido y servir acompañado con wasabi y salsa de
+                                soja.</li>
+                        </ol>
+                    </div>
+                </details>
+
+                <details open>
+                    <summary>
+                        <h3>Tuna Roll</h3>
+                        <i class="fa-solid fa-chevron-right summary-chevron"></i>
+                    </summary>
+                    <div class="details-content">
+                        <ol class="instructions-list">
+                            <li>En un bowl mezclar el atún desmenuzado sin líquido, mayonesa, cebolla de verdeo picada
+                                bien fina, sal, pimienta negra y unas gotas de tabasco a gusto.</li>
+                            <li>Colocar media alga nori sobre la esterilla, cubrir con 6 mm de shari, sésamo tostado y
+                                voltear.</li>
+                            <li>Disponer hojas de lechuga mantecosa limpia y la mezcla de atún formando un cordón
+                                uniforme de unos 2 cm de espesor.</li>
+                            <li>Cerrar el roll con la esterilla, sellar y fraccionar en 8 bocados.</li>
+                        </ol>
+                    </div>
+                </details>
+            </section>
+
+            <aside class="recipe-tips">
+                <h3>¿Por qué se creó el Uramaki?</h3>
+                <p>El uramaki (literalmente "roll al revés") surgió en la década de 1960 en Los Ángeles (dando origen al
+                    California Roll) para hacer el sushi más amigable a los comensales occidentales a quienes
+                    inicialmente les intimidaba la textura exterior del alga nori oscura.</p>
+            </aside>
+        </article>
     </div>
+
+    <script src="../scripts/recipe.js"></script>
 </body>
+
 </html>
-<script src="../scripts/recipe.js"></script>

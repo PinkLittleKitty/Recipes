@@ -1,87 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushi Cake de Langostinos - Recetas</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <meta name="description" content="Receta de Sushi Cake de langostinos con pasta de salmón y flor de lenguado.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles/theme.css">
     <link rel="stylesheet" href="../styles/recipe.css">
 </head>
+
 <body>
-    <div class="recipe-container">
-        <a href="sushi.html" class="back-button">← Volver a Sushi</a>
-        <div class="recipe-header">
-            <h1>Sushi Cake de Langostinos</h1>
-            <div class="scaling-controls">
-                <label for="servingScale">Ajustar cantidades:</label>
-                <select id="servingScale">
-                    <option value="0.5">½×</option>
-                    <option value="1" selected>1×</option>
-                    <option value="2">2×</option>
-                    <option value="3">3×</option>
-                </select>
-            </div>
-            <div class="recipe-meta">
-                <span>⏱️ Tiempo: 60min</span>
-                <span>👥 Porciones: <span id="servings">8</span></span>
-            </div>
-        </div>
+    <div class="page-wrapper">
+        <article class="recipe-container">
+            <nav class="recipe-nav" aria-label="Navegación de receta">
+                <a href="sushi.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Volver a Sushi</a>
+                <button id="printRecipeBtn" class="btn-ghost" title="Imprimir"><i class="fa-solid fa-print"></i>
+                    Imprimir</button>
+            </nav>
 
-        <div class="recipe-content">
-            <div class="ingredients-section">
-                <h2>Ingredientes</h2>
+            <header class="recipe-header">
+                <h1>Sushi Cake de Langostinos</h1>
+                <p class="subtitle">Torta sushi con langostinos, pasta de salmón, palta y flor de lenguado</p>
+
+                <div class="recipe-meta-row">
+                    <span><i class="fa-regular fa-clock"></i> 60 min</span>
+                    <span><i class="fa-solid fa-user-group"></i> <span id="servings">8</span> porciones</span>
+                </div>
+            </header>
+
+            <div class="recipe-hero-image-wrap">
+                <img src="../images/sushiCake.jpg" alt="Sushi Cake de Langostinos" class="recipe-image" loading="lazy">
+            </div>
+
+            <div class="recipe-controls-bar">
+                <div class="scaling-group">
+                    <label for="servingScale">Porciones:</label>
+                    <select id="servingScale" class="scale-select" aria-label="Escala de porciones">
+                        <option value="0.5">½×</option>
+                        <option value="1" selected>1×</option>
+                        <option value="1.5">1.5×</option>
+                        <option value="2">2×</option>
+                    </select>
+                </div>
+                <div class="timer-inline" data-seconds="180">
+                    <span class="timer-display">03:00</span>
+                    <button class="timer-btn timer-start-btn"><i class="fa-solid fa-play"></i> Iniciar</button>
+                    <button class="timer-btn timer-reset-btn" title="Reiniciar"><i
+                            class="fa-solid fa-rotate-left"></i></button>
+                </div>
+            </div>
+
+            <section class="recipe-section ingredients-section" aria-labelledby="ingredientsHeading">
+                <div class="section-header">
+                    <h2 id="ingredientsHeading" class="section-title">Ingredientes</h2>
+                </div>
                 <ul class="ingredients-list">
-                    <li><a href="shari.html">Shari</a> <span class="amount">1kg</span></li>
-                    <li>Langostinos n 2 o 40/50 <span class="amount">22un</span></li>
-                    <li>Palta hass <span class="amount">1un</span></li>
-                    <li>Sésamo negro y blanco tostado <span class="amount">50grs</span></li>
-                    <li>Lenguado entero <span class="amount">1un (700grs-1kg)</span></li>
-                    <li>Huevas de salmón rosado o Ikura <span class="amount">5grs</span></li>
-                    <li>Sake <span class="amount">a gusto</span></li>
-                    <li>Salmón rosado <span class="amount">400grs</span></li>
-                    <li>Ricota <span class="amount">150grs</span></li>
-                    <li>Lima <span class="amount">1un</span></li>
-                    <li>Limón <span class="amount">1un</span></li>
-                    <li>Palitos de brochette de bambú <span class="amount">12un</span></li>
-                    <li>Hojas de menta <span class="amount">30grs</span></li>
-                    <li>Mayonesa <span class="amount">50grs</span></li>
-                    <li>Wasabi <span class="amount">20grs</span></li>
-                    <li>Salsa de soja <span class="amount">50cm3</span></li>
-                    <li>Tilapia (opcional)</li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient"><a href="shari.html">Shari</a></span>
+                        </label>
+                        <span class="amount">1kg</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Langostinos n 2 o 40/50</span>
+                        </label>
+                        <span class="amount">22un</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Palta hass</span>
+                        </label>
+                        <span class="amount">1un</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Sésamo negro y blanco tostado</span>
+                        </label>
+                        <span class="amount">50grs</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Lenguado entero</span>
+                        </label>
+                        <span class="amount">1un (700grs-1kg)</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Huevas de salmón rosado o Ikura</span>
+                        </label>
+                        <span class="amount">5grs</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Sake</span>
+                        </label>
+                        <span class="amount">a gusto</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Salmón rosado</span>
+                        </label>
+                        <span class="amount">400grs</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Ricota</span>
+                        </label>
+                        <span class="amount">150grs</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Lima</span>
+                        </label>
+                        <span class="amount">1un</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Limón</span>
+                        </label>
+                        <span class="amount">1un</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Palitos de brochette de bambú</span>
+                        </label>
+                        <span class="amount">12un</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Hojas de menta</span>
+                        </label>
+                        <span class="amount">30grs</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Mayonesa</span>
+                        </label>
+                        <span class="amount">50grs</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Wasabi</span>
+                        </label>
+                        <span class="amount">20grs</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Salsa de soja</span>
+                        </label>
+                        <span class="amount">50cm3</span>
+                    </li>
+                    <li>
+                        <label class="ingredient-left">
+                            <input type="checkbox" class="ingredient-checkbox">
+                            <span class="ingredient">Tilapia</span>
+                        </label>
+                        <span class="amount">opcional</span>
+                    </li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="instructions-section">
-                <h2>Instrucciones</h2>
-                <ol class="instructions-list">
-                    <details closed>
-                        <summary><h3>Lenguado</h3></summary>
+            <section class="recipe-section instructions-section" aria-labelledby="instructionsHeading">
+                <div class="section-header">
+                    <h2 id="instructionsHeading" class="section-title">Instrucciones</h2>
+                </div>
+
+                <details open>
+                    <summary>
+                        <h3>Lenguado</h3>
+                        <i class="fa-solid fa-chevron-right summary-chevron"></i>
+                    </summary>
+                    <div class="details-content">
                         <ol class="instructions-list">
-                            <li>Filetear el lenguado, en cuatro filetes, y luego cortar láminas a 45 grados de 6 x 2 cm, y colocar 6 láminas en forma de tándem, o escalonada una arriba de la otra, y después cerrar como si fuera un roll redondo, y reservar.</li>
+                            <li>Filetear el lenguado en cuatro filetes, y luego cortar láminas a 45 grados de 6 x 2 cm,
+                                y colocar 6 láminas en forma de tándem, o escalonada una arriba de la otra, y después
+                                cerrar como si fuera un roll redondo, y reservar.</li>
                         </ol>
-                    </details>
-                    <details closed>
-                        <summary><h3>Langostinos</h3></summary>
+                    </div>
+                </details>
+
+                <details open>
+                    <summary>
+                        <h3>Langostinos</h3>
+                        <i class="fa-solid fa-chevron-right summary-chevron"></i>
+                    </summary>
+                    <div class="details-content">
                         <ol class="instructions-list">
                             <li>Tomar los langostinos y quitarles el aparato digestivo con un mondadiente.</li>
-                            <li>Luego pasar un palito de brochette, realizamos este proceso con todos los langostinos.</li>
-                            <li>En abundante agua caliente con lima y sal gruesa, blanqueamos los langostinos unos minutos.</li>
-                            <li>Después quitamos los palitos, pelamos, cortamos la cola en diagonal, abrimos al medio en forma de mariposa, y reservar.</li>
+                            <li>Luego pasar un palito de brochette, realizamos este proceso con todos los langostinos.
+                            </li>
+                            <li>En abundante agua caliente con lima y sal gruesa, blanqueamos los langostinos unos
+                                minutos.</li>
+                            <li>Después quitamos los palitos, pelamos, cortamos la cola en diagonal, abrimos al medio en
+                                forma de mariposa, y reservar.</li>
                         </ol>
-                    </details>
-                    <details closed>
-                        <summary><h3>Armado</h3></summary>
+                    </div>
+                </details>
+
+                <details open>
+                    <summary>
+                        <h3>Armado</h3>
+                        <i class="fa-solid fa-chevron-right summary-chevron"></i>
+                    </summary>
+                    <div class="details-content">
                         <ol class="instructions-list">
-                            <li>En un bowl colocamos el salmón y menta picada, junto a la ricota, mezclamos todo, formando una pasta, reservar en la heladera.</li>
+                            <li>En un bowl colocamos el salmón y menta picada, junto a la ricota, mezclamos todo,
+                                formando una pasta, reservar en la heladera.</li>
                             <li>Tomamos el molde de torta y colocamos una capa de arroz de sushi de 2cm de ancho.</li>
-                            <li>Luego colocamos la pasta de ricota, salmón, y menta de 1-2 cm, y sobre ella otra capa de arroz de sushi, y desmoldar sobre un plato.</li>
-                            <li>Después, colocar el sésamo sobre los bordes de la torta, colocar los langostinos, luego cortar en finas láminas la palta, y colocarla en círculo sobre la superficie. Por último, colocar la flor de lenguado en el centro, junto a un poco de caviar.</li>
+                            <li>Luego colocamos la pasta de ricota, salmón, y menta de 1-2 cm, y sobre ella otra capa de
+                                arroz de sushi, y desmoldar sobre un plato.</li>
+                            <li>Después, colocar el sésamo sobre los bordes de la torta, colocar los langostinos, luego
+                                cortar en finas láminas la palta, y colocarla en círculo sobre la superficie. Por
+                                último, colocar la flor de lenguado en el centro, junto a un poco de caviar.</li>
                         </ol>
-                    </details>
-                </ol>
-            </div>
-        </div>
+                    </div>
+                </details>
+            </section>
+        </article>
     </div>
+
+    <script src="../scripts/recipe.js"></script>
 </body>
+
 </html>
-<script src="../scripts/recipe.js"></script>
